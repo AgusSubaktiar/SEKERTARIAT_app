@@ -1,0 +1,88 @@
+ERROR - 2022-03-06 20:31:17 --> Column 'id_bidang' cannot be null
+CRITICAL - 2022-03-06 20:39:18 --> Undefined variable: getUserData
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\adduser.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 21, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/adduser', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\User.php(20): view('admin/adduser', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\User->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-06 20:40:48 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getResult() must be of the type string, null given, called in D:\xampp\htdocs\codeigniter4\system\Model.php on line 184
+#0 D:\xampp\htdocs\codeigniter4\system\Model.php(184): CodeIgniter\Database\BaseResult->getResult(NULL)
+#1 D:\xampp\htdocs\codeigniter4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#2 D:\xampp\htdocs\codeigniter4\app\Models\Users_Model.php(35): CodeIgniter\BaseModel->findAll()
+#3 D:\xampp\htdocs\codeigniter4\app\Controllers\User.php(16): App\Models\Users_Model->getUserModel()
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\User->index()
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-06 20:41:00 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getResult() must be of the type string, null given, called in D:\xampp\htdocs\codeigniter4\system\Model.php on line 184
+#0 D:\xampp\htdocs\codeigniter4\system\Model.php(184): CodeIgniter\Database\BaseResult->getResult(NULL)
+#1 D:\xampp\htdocs\codeigniter4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#2 D:\xampp\htdocs\codeigniter4\app\Models\Users_Model.php(35): CodeIgniter\BaseModel->findAll()
+#3 D:\xampp\htdocs\codeigniter4\app\Controllers\User.php(16): App\Models\Users_Model->getUserModel()
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\User->index()
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-06 20:41:40 --> Invalid file: admin/pages/user.php
+#0 D:\xampp\htdocs\codeigniter4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/pages/use...')
+#1 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/pages/use...', Array, true)
+#2 D:\xampp\htdocs\codeigniter4\app\Controllers\User.php(17): view('admin/pages/use...', Array)
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\User->index()
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-06 20:42:19 --> Undefined variable: getNamaBidang
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\adduser.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/adduser', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\User.php(17): view('admin/adduser', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\User->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-06 20:44:36 --> Invalid file: admin/pages/user.php
+#0 D:\xampp\htdocs\codeigniter4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/pages/use...')
+#1 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/pages/use...', Array, true)
+#2 D:\xampp\htdocs\codeigniter4\app\Controllers\User.php(19): view('admin/pages/use...', Array)
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\User->index()
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-06 20:44:53 --> Invalid file: admin/defaultAdmin.php
+#0 D:\xampp\htdocs\codeigniter4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/defaultAd...')
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(226): CodeIgniter\View\View->render('admin/defaultAd...', Array, true)
+#2 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/adduser', Array, true)
+#3 D:\xampp\htdocs\codeigniter4\app\Controllers\User.php(19): view('admin/adduser', Array)
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\User->index()
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-06 21:19:31 --> syntax error, unexpected end of file
+#0 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/adduser', Array, true)
+#2 D:\xampp\htdocs\codeigniter4\app\Controllers\User.php(19): view('admin/adduser', Array)
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\User->index()
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#8 {main}
