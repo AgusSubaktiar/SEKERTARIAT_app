@@ -1,0 +1,132 @@
+CRITICAL - 2022-03-10 19:49:56 --> Call to undefined method App\Models\Formulir_Model::getdata
+#0 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(59): CodeIgniter\Model->__call('getdata', Array)
+#1 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->addFormulir()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-10 19:51:26 --> Undefined variable: formulir1
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\formulir.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 74, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/formulir', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(31): view('admin/formulir', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-10 19:51:28 --> Undefined variable: formulir1
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\formulir.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 74, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/formulir', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(31): view('admin/formulir', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-10 19:54:11 --> Call to undefined method App\Models\Formulir_Model::getdata
+#0 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(59): CodeIgniter\Model->__call('getdata', Array)
+#1 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->addformulir()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-10 19:55:10 --> Call to undefined method App\Models\Formulir_Model::getdata
+#0 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(59): CodeIgniter\Model->__call('getdata', Array)
+#1 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->addformulir()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-10 19:56:45 --> Call to undefined method App\Models\Formulir_Model::getdata
+#0 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(59): CodeIgniter\Model->__call('getdata', Array)
+#1 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->addformulir()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-10 19:57:38 --> Undefined variable: formulir1
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\formulir.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 74, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/formulir', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(31): view('admin/formulir', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-10 19:57:40 --> Undefined variable: formulir1
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\formulir.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 74, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/formulir', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(31): view('admin/formulir', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-10 22:03:45 --> Call to undefined method App\Models\Formulir_Model::getdata
+#0 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(59): CodeIgniter\Model->__call('getdata', Array)
+#1 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->addformulir()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-10 22:05:00 --> Call to undefined method App\Models\Formulir_Model::getdata
+#0 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(59): CodeIgniter\Model->__call('getdata', Array)
+#1 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->addformulir()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-10 22:07:50 --> Call to undefined method App\Models\Formulir_Model::getdata
+#0 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(59): CodeIgniter\Model->__call('getdata', Array)
+#1 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->addformulir()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-10 22:08:28 --> Undefined variable: pager
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\formulir.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 92, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/formulir', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(61): view('admin/formulir', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->addformulir()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-10 22:12:42 --> Call to undefined method App\Models\Formulir_Model::getdata
+#0 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(59): CodeIgniter\Model->__call('getdata', Array)
+#1 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->addformulir()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-10 22:20:30 --> Call to undefined method App\Models\Formulir_Model::getdata
+#0 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(59): CodeIgniter\Model->__call('getdata', Array)
+#1 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->addformulir()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}

@@ -18,14 +18,14 @@
 <li class="nav-item dropdown">
     <a href="" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-th-large"></i> <span>Email</span></a>
     <ul class="dropdown-menu">
-        <li><a class="nav-link" href="layout-default.html">Email Masuk</a></li>
-        <li><a class="nav-link" href="layout-default.html">Email Keluar</a></li>
+        <li><a class="nav-link" href="<?= base_url('EmailMs'); ?>">Email Masuk</a></li>
+        <li><a class="nav-link" href="<?= base_url('EmailK'); ?>">Email Keluar</a></li>
     </ul>
 </li>
 
-<li class="menu-header">Formulir</li>
+<li class="menu-header">Formulir - formulir</li>
 <li>
-    <a href="#"><i class="fas fa-file-alt"></i> <span>Formulir - formulir</span></a>
+    <a href="<?= base_url('Formulir'); ?>"><i class="fas fa-clipboard"></i> <span>Formulir - formulir</span></a>
 </li>
 
 <li class="menu-header">Tambah User</li>

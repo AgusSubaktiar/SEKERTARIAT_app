@@ -1,0 +1,37 @@
+CRITICAL - 2022-03-15 21:52:27 --> Undefined variable: row
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\memo.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 157, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/memo', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\Memo.php(32): view('admin/memo', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Memo->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Memo))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-15 21:53:38 --> Undefined index: nama_dokumen
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\memo.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 85, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/memo', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\Memo.php(32): view('admin/memo', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Memo->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Memo))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-15 21:58:45 --> Undefined index: no_memo
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\memo.php(161): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 161, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/memo', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\Memo.php(32): view('admin/memo', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Memo->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Memo))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-03-15 22:00:50 --> Unknown column 'tgl_memo' in 'field list'

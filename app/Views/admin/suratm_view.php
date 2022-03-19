@@ -59,7 +59,7 @@
                                 <table class="table table-striped">
                                     <tr>
                                         <th>No.</th>
-                                        <th>Proyek</th>
+                                        <th>Nama Proyek</th>
                                         <th>Kontak</th>
                                         <th>Tgl Surat</th>
                                         <th>No Surat</th>

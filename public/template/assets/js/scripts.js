@@ -650,3 +650,47 @@ $(document).on('click', '#btn-editsmu', function (){
   $('.modal-body #urgensi').val($(this).data('urgensi'));
   $('.modal-body #ordner').val($(this).data('ordner'));
 })
+
+$(document).on('click', '#btn-editEms', function (){
+  $('.modal-body #id-email').val($(this).data('id'));
+  $('.modal-body #proyek').val($(this).data('proyek'));
+  $('.modal-body #kontak').val($(this).data('kontak'));
+  $('.modal-body #tgl_surat').val($(this).data('tgl_surat'));
+  $('.modal-body #no-surat').val($(this).data('no_surat'));
+  $('.modal-body #dibuat').val($(this).data('dibuat'));
+  $('.modal-body #hal').val($(this).data('hal'));
+  $('.modal-body #kerahasiaan').val($(this).data('kerahasiaan'));
+  $('.modal-body #urgensi').val($(this).data('urgensi'));
+  $('.modal-body #ordner').val($(this).data('ordner'));
+})
+
+$(document).on('click', '#btn-editEk', function (){
+  $('.modal-body #id-emailk').val($(this).data('id'));
+  $('.modal-body #proyek').val($(this).data('proyek'));
+  $('.modal-body #kontak').val($(this).data('kontak'));
+  $('.modal-body #tgl_surat').val($(this).data('tgl_surat'));
+  $('.modal-body #no-surat').val($(this).data('no_surat'));
+  $('.modal-body #dibuat').val($(this).data('dibuat'));
+  $('.modal-body #hal').val($(this).data('hal'));
+  $('.modal-body #kerahasiaan').val($(this).data('kerahasiaan'));
+  $('.modal-body #urgensi').val($(this).data('urgensi'));
+  $('.modal-body #ordner').val($(this).data('ordner'));
+})
+
+$(document).on('click', '#btn-editformulir', function (){
+  $('.modal-body #id-formulir').val($(this).data('id'));
+  $('.modal-body #nama_dokumen').val($(this).data('nama_dokumen'));
+  $('.modal-body #input_oleh').val($(this).data('input_oleh'));
+  $('.modal-body #waktu_input').val($(this).data('waktu_input'));
+  $('.modal-body #upload').val($(this).data('upload'));
+})
+
+$(document).on('click', '#btn-editmemo', function (){
+  $('.modal-body #id-memo').val($(this).data('id'));
+  $('.modal-body #tgl_memo').val($(this).data('tgl_memo'));
+  $('.modal-body #no_surat').val($(this).data('no_surat'));
+  $('.modal-body #dibuat').val($(this).data('dibuat'));
+  $('.modal-body #perihal').val($(this).data('perihal'));
+  $('.modal-body #dari').val($(this).data('dari'));
+  
+})

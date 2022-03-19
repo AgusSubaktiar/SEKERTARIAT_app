@@ -32,76 +32,73 @@
     </divc>
 
     <div class="section-body">
-        <div class="section-body">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4>
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modelTambahSk">
-                                    <i class="fa fas-plus">Tambah Data</i>
-                                </button>
-                            </h4>
-                            <div class="card-header-form">
-                                <form action="" method="post">
-                                    <div class="input-group">
-                                        <input type="text" name="keyword" value="" class="form-control" placeholder="Search">
-                                        <div class="input-group-btn">
-                                            <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-                                        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modelTambahSk">
+                                <i class="fa fas-plus">Tambah Data</i>
+                            </button>
+                        </h4>
+                        <div class="card-header-form">
+                            <form action="" method="post">
+                                <div class="input-group">
+                                    <input type="text" name="keyword" value="" class="form-control" placeholder="Search">
+                                    <div class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
                                     </div>
-                                </form>
-                            </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="card-body p-0">
-                            <div class="table-responsive">
-                                <table class="table table-striped">
-                                    <tr>
-                                        <th>No.</th>
-                                        <th>Proyek</th>
-                                        <th>Kontak</th>
-                                        <th>Tgl Surat</th>
-                                        <th>No Surat</th>
-                                        <th>Dibuat di</th>
-                                        <th>Perihal</th>
-                                        <th>Kerahasiaan</th>
-                                        <th>Urgensi</th>
-                                        <th>Ordner</th>
-                                        <th>Aksi</th>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-md">
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Proyek</th>
+                                    <th>Kontak</th>
+                                    <th>Tgl Surat</th>
+                                    <th>No Surat</th>
+                                    <th>Dibuat di</th>
+                                    <th>Perihal</th>
+                                    <th>Kerahasiaan</th>
+                                    <th>Urgensi</th>
+                                    <th>Ordner</th>
+                                    <th>Aksi</th>
 
-                                    </tr>
-                                    <tbody>
-                                        <?php
-                                        $page = isset($_GET['page']) ? $_GET['page'] : 1;
-                                        $no = 1 + (5 * ($page - 1));
+                                </tr>
+                                <tbody>
+                                    <?php
+                                    $page = isset($_GET['page']) ? $_GET['page'] : 1;
+                                    $no = 1 + (5 * ($page - 1));
 
-                                        foreach ($surat_keluar as $row) : ?>
-                                            <tr>
-                                                <td scope"row"><?= $no; ?></td>
-                                                <td><?= $row['proyek']; ?></td>
-                                                <td><?= $row['kontak']; ?></td>
-                                                <td><?= $row['tgl_surat']; ?></td>
-                                                <td><?= $row['no_surat']; ?></td>
-                                                <td><?= $row['dibuat']; ?></td>
-                                                <td><?= $row['hal']; ?></td>
-                                                <td><?= $row['kerahasiaan']; ?></td>
-                                                <td><?= $row['urgensi']; ?></td>
-                                                <td><?= $row['ordner']; ?></td>
-
-                                                <td>
-                                                    <button type="button" data-toggle="modal" data-target="#modelUbahSk" id="btn-editsk" class="btn btn-sm btn-warning" data-id="<?= $row['id']; ?>" data-proyek="<?= $row['proyek']; ?>" data-kontak="<?= $row['kontak']; ?>" data-tgl_surat="<?= $row['tgl_surat']; ?>" data-no_surat="<?= $row['no_surat']; ?>" data-dibuat="<?= $row['dibuat']; ?>" data-hal="<?= $row['hal']; ?>" data-kerahasiaan="<?= $row['kerahasiaan']; ?>" data-urgensi="<?= $row['urgensi']; ?>" data-ordner="<?= $row['ordner']; ?>"> <i class="fas fa-edit"></i></button>
-                                                    <button type="button" data-toggle="modal" data-target="#modelHapusSk" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i></button>
-
-                                                </td>
-                                            </tr>
-                                            <?php $no++; ?>
-                                        <?php endforeach; ?>
-                                    </tbody>
-                                </table>
-                                <?= $pager->links('default', 'pagination'); ?>
-                            </div>
+                                    foreach ($surat_keluar as $row) : ?>
+                                        <tr>
+                                            <td scope"row"><?= $no; ?></td>
+                                            <td><?= $row['proyek']; ?></td>
+                                            <td><?= $row['kontak']; ?></td>
+                                            <td><?= $row['tgl_surat']; ?></td>
+                                            <td><?= $row['no_surat']; ?></td>
+                                            <td><?= $row['dibuat']; ?></td>
+                                            <td><?= $row['hal']; ?></td>
+                                            <td><?= $row['kerahasiaan']; ?></td>
+                                            <td><?= $row['urgensi']; ?></td>
+                                            <td><?= $row['ordner']; ?></td>
+                                            <td class="text-center" style="width: 20%">
+                                                <button type="button" data-toggle="modal" data-target="#modelUbahSk" id="btn-editsk" class="btn btn-sm btn-warning" data-id="<?= $row['id']; ?>" data-proyek="<?= $row['proyek']; ?>" data-kontak="<?= $row['kontak']; ?>" data-tgl_surat="<?= $row['tgl_surat']; ?>" data-no_surat="<?= $row['no_surat']; ?>" data-dibuat="<?= $row['dibuat']; ?>" data-hal="<?= $row['hal']; ?>" data-kerahasiaan="<?= $row['kerahasiaan']; ?>" data-urgensi="<?= $row['urgensi']; ?>" data-ordner="<?= $row['ordner']; ?>"> <i class="fas fa-edit"></i></button>
+                                                <button type="button" data-toggle="modal" data-target="#modelHapusSk" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <?php $no++; ?>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                            <?= $pager->links('default', 'pagination'); ?>
                         </div>
+                    </div>
 </section>
 
 <!-- Modal Tambah Surat-->
