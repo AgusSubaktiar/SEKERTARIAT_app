@@ -28,6 +28,11 @@
     <a href="<?= base_url('Formulir'); ?>"><i class="fas fa-clipboard"></i> <span>Formulir - formulir</span></a>
 </li>
 
+<li class="menu-header">Dokument Tender</li>
+<li>
+    <a href=""><i class="fas fa-clipboard"></i> <span>Dokument Tender</span></a>
+</li>
+
 <li class="menu-header">Tambah User</li>
 <li>
     <a href="<?= base_url('User'); ?>"><i class="fas fa-user-alt"></i> <span>Tambah User</span></a>
