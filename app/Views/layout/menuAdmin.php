@@ -22,8 +22,8 @@
 <li class="nav-item dropdown">
     <a href="" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-th-large" style="color:black;"></i> <span>Email</span></a>
     <ul class="dropdown-menu">
-        <li><a class="nav-link" href="<?= base_url('EmailMs'); ?>">Email Masuk</a></li>
-        <li><a class="nav-link" href="<?= base_url('EmailK'); ?>">Email Keluar</a></li>
+        <li><a class="nav-link" href="<?= base_url('EmailMasuk'); ?>">Email Masuk</a></li>
+        <li><a class="nav-link" href="<?= base_url('EmailKeluar'); ?>">Email Keluar</a></li>
     </ul>
 </li>
 
