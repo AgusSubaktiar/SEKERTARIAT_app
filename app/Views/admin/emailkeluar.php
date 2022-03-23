@@ -143,7 +143,7 @@
                     </div>
                     <div class="custom-file mb-3">
                         <label class="custom-file-label" for="ordner">Pilih file</label>
-                        <input type="file" name="ordner" id="ordner">
+                        <input type="file" class="form-control" name="ordner" id="ordner">
                     </div>
 
             </div>

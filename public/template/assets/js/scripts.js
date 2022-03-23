@@ -644,7 +644,7 @@ $(document).on('click', '#btn-editmemomasuk', function (){
   $('.modal-body #dari').val($(this).data('dari'));
   $('.modal-body #kepada').val($(this).data('kepada'));
   $('.modal-body #perihal').val($(this).data('perihal'));
-  $('.modal-body #order').val($(this).data('order'));
+  $('.modal-body #ordner').val($(this).data('ordner'));
 })
 
 $(document).on('click', '#btn-editmemokeluar', function (){
@@ -654,7 +654,7 @@ $(document).on('click', '#btn-editmemokeluar', function (){
   $('.modal-body #dari').val($(this).data('dari'));
   $('.modal-body #kepada').val($(this).data('kepada'));
   $('.modal-body #perihal').val($(this).data('perihal'));
-  $('.modal-body #order').val($(this).data('order'));
+  $('.modal-body #ordner').val($(this).data('ordner'));
 })
 
 
@@ -667,7 +667,7 @@ $(document).on('click', '#btn-editemailmasuk', function (){
   $('.modal-body #kode_proyek').val($(this).data('kode_proyek'));
   $('.modal-body #nama_proyek').val($(this).data('nama_proyek'));
   $('.modal-body #tembusan').val($(this).data('tembusan'));
-  $('.modal-body #order').val($(this).data('order'));
+  $('.modal-body #ordner').val($(this).data('ordner'));
   
 })
 
@@ -680,7 +680,14 @@ $(document).on('click', '#btn-editemailkeluar', function (){
   $('.modal-body #kode_proyek').val($(this).data('kode_proyek'));
   $('.modal-body #nama_proyek').val($(this).data('nama_proyek'));
   $('.modal-body #tembusan').val($(this).data('tembusan'));
-  $('.modal-body #order').val($(this).data('order'));
+  $('.modal-body #ordner').val($(this).data('ordner'));
+  
+})
+
+$(document).on('click', '#btn-editformulir', function (){
+  $('.modal-body #id-formulir').val($(this).data('id'));
+  $('.modal-body #ordner').val($(this).data('ordner'));
+  $('.modal-body #keterangan').val($(this).data('keterangan'));
   
 })
 

@@ -4,7 +4,7 @@
 
 <section class="section">
     <div class="section-header">
-        <h1>Tabel Data Memo Keluar</h1>
+        <h1>Tabel Data Formulir</h1>
     </div>
 
     <?php if (session()->get('message')) : ?>
@@ -12,7 +12,7 @@
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            Data Memo Keluar<strong><?= session()->getFlashdata('message'); ?></strong>
+            Data Formulir<strong><?= session()->getFlashdata('message'); ?></strong>
         </div>
 
         <script>
@@ -39,7 +39,7 @@
                         <div class="card-header">
                             <h4>
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modelTambahMemoKeluar">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modelTambahFormulir">
                                     <i class="fa fas-plus">Tambah Data</i>
                                 </button>
                             </h4>
@@ -59,12 +59,8 @@
                                 <table class="table table-striped table-md">
                                     <tr>
                                         <th>No.</th>
-                                        <th>Tanggal Surat</th>
-                                        <th>No Memo</th>
-                                        <th>Dari</th>
-                                        <th>Kepada</th>
-                                        <th>Perihal</th>
-                                        <th>ordner</th>
+                                        <th>Nama File</th>
+                                        <th>Keterangan</th>
                                         <th>Aksi</th>
 
                                     </tr>
@@ -73,19 +69,15 @@
                                         $page = isset($_GET['page']) ? $_GET['page'] : 1;
                                         $no = 1 + (10 * ($page - 1));
 
-                                        foreach ($memokeluar as $row) : ?>
+                                        foreach ($formulir as $row) : ?>
                                             <tr>
                                                 <td scope"row"><?= $no; ?></td>
-                                                <td><?= $row['tgl_memokeluar']; ?></td>
-                                                <td><?= $row['no_memokeluar']; ?></td>
-                                                <td><?= $row['dari']; ?></td>
-                                                <td><?= $row['kepada']; ?></td>
-                                                <td><?= $row['perihal']; ?></td>
                                                 <td><?= $row['ordner']; ?></td>
+                                                <td><?= $row['keterangan']; ?></td>
                                                 <td>
-                                                    <button type="button" data-toggle="modal" data-target="#modelUbahMemoKeluar" id="btn-editmemokeluar" class="btn btn-sm btn-warning" data-id="<?= $row['id']; ?>" data-tgl_memokeluar="<?= $row['tgl_memokeluar']; ?>" data-no_memokeluar="<?= $row['no_memokeluar']; ?>" data-dari="<?= $row['dari']; ?>" data-kepada="<?= $row['kepada']; ?>" data-perihal="<?= $row['perihal']; ?>" data-ordner="<?= $row['ordner']; ?>"> <i class="fas fa-edit"></i></button>
-                                                    <button type="button" data-toggle="modal" data-target="#modelHapusMemoKeluar" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i></button>
-                                                    <button type="button" data-toggle="modal" data-target="#modelDownloadMemoKeluar" class="btn btn-sm btn-success"> <i class="fas fa-download"></i></button>
+                                                    <button type="button" data-toggle="modal" data-target="#modelUbahFormulir" id="btn-editformulir" class="btn btn-sm btn-warning" data-id="<?= $row['id']; ?>" data-ordner="<?= $row['ordner']; ?>" data-keterangan="<?= $row['keterangan']; ?>"> <i class="fas fa-edit"></i></button>
+                                                    <button type="button" data-toggle="modal" data-target="#modelHapusFormulir" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i></button>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDownloadFormulir" class="btn btn-sm btn-success"> <i class="fas fa-download"></i></button>
                                                 </td>
                                             </tr>
                                             <?php $no++; ?>
@@ -98,7 +90,7 @@
 </section>
 
 <!-- Modal Tambah Surat-->
-<div class="modal fade" id="modelTambahMemoKeluar">
+<div class="modal fade" id="modelTambahFormulir">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -108,36 +100,19 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="<?= base_url('MemoKeluar/addmemokeluar'); ?>" method="POST" enctype="multipart/form-data">
-                    <div class="form-group mb-1">
-                        <label for="tgl_memokeluar"></label>
-                        <input type="date" name="tgl_memokeluar" id="tgl_memokeluar" class="form-control" placeholder="Masukan Tanggal Memo Masuk">
-                    </div>
-                    <div class="form-group mb-1">
-                        <label for="no_memokeluar"></label>
-                        <input type="text" name="no_memokeluar" id="no_memokeluar" class="form-control" placeholder="Masukan No Memo">
-                    </div>
-                    <div class="form-group mb-1">
-                        <label for="dari"></label>
-                        <input type="text" name="dari" id="dari" class="form-control" placeholder="Masukan Dari">
-                    </div>
-                    <div class="form-group mb-1">
-                        <label for="kepada"></label>
-                        <input type="text" name="kepada" id="kepada" class="form-control" placeholder="Masukan Kepada">
-                    </div>
-                    <div class="form-group mb-1">
-                        <label for="perihal"></label>
-                        <input type="text" name="perihal" id="perihal" class="form-control" placeholder="Masukan perihal">
-                    </div>
-                    <div class="custom-file mb-3">
+                <form action="<?= base_url('Formulir/addformulir'); ?>" method="POST" enctype="multipart/form-data">
+                    <div class="custom-file mb-1">
                         <label class="custom-file-label" for="ordner">Pilih file</label>
                         <input type="file" name="ordner" id="ordner">
                     </div>
-
+                    <div class="form-group mb-1">
+                        <label for="keterangan"></label>
+                        <input type="text" name="keterangan" id="keterangan" class="form-control" placeholder="Masukan keterangan">
+                    </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" name="addmemokeluar" class="btn btn-primary">Tambah Data</button>
+                <button type="submit" name="addformulir" class="btn btn-primary">Tambah Data</button>
             </div>
             </form>
         </div>
@@ -145,7 +120,7 @@
 </div>
 
 <!-- Modal Edit Surat-->
-<div class="modal fade" id="modelUbahMemoKeluar">
+<div class="modal fade" id="modelUbahFormulir">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -155,43 +130,27 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="<?= base_url('MemoKeluar/ubahmemokeluar'); ?>" method="POST" enctype="multipart/form-data">
+                <form action="<?= base_url('Formulir/ubahformulir'); ?>" method="POST" enctype="multipart/form-data">
                     <div class="form-group mb-1">
-                        <input type="hidden" name="id" id="id-memokeluar">
-                        <label for="tgl_memokeluar"></label>
-                        <input type="date" name="tgl_memokeluar" id="tgl_memokeluar" class="form-control" placeholder="Masukan Tanggal Memo" <?= $row['tgl_memokeluar'] ?>>
-                    </div>
-                    <div class="form-group mb-1">
-                        <label for="no_memokeluar"></label>
-                        <input type="text" name="no_memokeluar" id="no_memokeluar" class="form-control" placeholder="Masukan No memo" value="<?= $row['no_memokeluar'] ?>">
-                    </div>
-                    <div class="form-group mb-1">
-                        <label for="dari"></label>
-                        <input type="text" name="dari" id="dari" class="form-control" placeholder="Masukan dari" value="<?= $row['dari'] ?>">
-                    </div>
-                    <div class="form-group mb-1">
-                        <label for="kepada"></label>
-                        <input type="text" name="kepada" id="kepada" class="form-control" placeholder="Masukan kepada" value="<?= $row['kepada'] ?>">
-                    </div>
-                    <div class="form-group mb-1">
-                        <label for="perihal"></label>
-                        <input type="text" name="perihal" id="perihal" class="form-control" placeholder="Masukan perihal" value="<?= $row['perihal'] ?>">
-                    </div>
-                    <div class=" form-group mb-1">
+                        <input type="hidden" name="id" id="id-formulir">
                         <label for="ordner"></label>
                         <input type="text" name="ordner" id="ordner" class="form-control" placeholder="Masukan ordner" value="<?= $row['ordner'] ?>">
+                    </div>
+                    <div class="form-group mb-1">
+                        <label for="keterangan"></label>
+                        <input type="text" name="keterangan" id="keterangan" class="form-control" placeholder="Masukan No memo" value="<?= $row['keterangan'] ?>">
                     </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" name="ubahmemokeluar" class="btn btn-primary">Edit Data</button>
+                <button type="submit" name="ubahformulir" class="btn btn-primary">Edit Data</button>
             </div>
             </form>
         </div>
     </div>
 </div>
 <!-- Modal Hapus Data Surat Masuk-->
-<div class="modal fade" id="modelHapusMemoKeluar">
+<div class="modal fade" id="modelHapusFormulir">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -199,14 +158,14 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <a href="MemoKeluar/hapusmemokeluar/<?= $row['id']; ?>" class="btn btn-primary">Yakin</a>
+                <a href="Formulir/hapusformulir/<?= $row['id']; ?>" class="btn btn-primary">Yakin</a>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Modal download Data Memo Keluar-->
-<div class="modal fade" id="modelDownloadMemoKeluar">
+<div class="modal fade" id="modelDownloadFormulir">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -214,7 +173,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <a href="MemoKeluar/download/<?= $row['ordner'] ?>" class="btn btn-primary">Yakin</a>
+                <a href="Formulir/download/<?= $row['ordner'] ?>" class="btn btn-primary">Yakin</a>
             </div>
         </div>
     </div>

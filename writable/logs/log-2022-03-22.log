@@ -334,3 +334,27 @@ CRITICAL - 2022-03-22 22:50:58 --> Undefined variable: pager
 #8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
 #10 {main}
+CRITICAL - 2022-03-22 23:25:21 --> Invalid file: formulir.php
+#0 D:\xampp\htdocs\codeigniter4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('formulir.php')
+#1 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('formulir', Array, true)
+#2 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(11): view('formulir')
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->index()
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-22 23:25:55 --> Invalid file: formulir.php
+#0 D:\xampp\htdocs\codeigniter4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('formulir.php')
+#1 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('formulir', Array, true)
+#2 D:\xampp\htdocs\codeigniter4\app\Controllers\Formulir.php(11): view('formulir')
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Formulir->index()
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulir))
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2022-03-22 23:37:43 --> Unknown column 'created_at' in 'field list'
+ERROR - 2022-03-22 23:40:09 --> Unknown column 'created_at' in 'field list'
+ERROR - 2022-03-22 23:41:30 --> Unknown column 'created_at' in 'field list'
+ERROR - 2022-03-22 23:43:31 --> Unknown column 'created_at' in 'field list'

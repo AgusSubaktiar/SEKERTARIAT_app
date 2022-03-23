@@ -146,4 +146,13 @@ class MemoKeluar extends BaseController
             return redirect()->to(base_url('memokeluar'));
         }
     }
+    public function download($var)
+    {
+        $response = $this->response;;
+
+        $path = 'uploadmemokeluar/' . (string)$var;
+
+        echo $path;
+        return $response->download($path, null);
+    }
 }
