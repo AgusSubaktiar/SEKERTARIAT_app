@@ -615,26 +615,25 @@ $(function() {
   }
 });
 
-$(document).on('click', '#btn-edit', function (){
-  $('.modal-body #id-surat_masuk').val($(this).data('id'));
-  $('.modal-body #perusahaan').val($(this).data('perusahaan'));
-  $('.modal-body #alamat').val($(this).data('alamat'));
-  $('.modal-body #tgl_masuk').val($(this).data('tgl_masuk'));
-  $('.modal-body #no-surat').val($(this).data('no_surat'));
+$(document).on('click', '#btn-editsuratmasuk', function (){
+  $('.modal-body #id-suratmasuk').val($(this).data('id'));
+  $('.modal-body #tgl_suratmasuk').val($(this).data('tgl_suratmasuk'));
+  $('.modal-body #no_suratmasuk').val($(this).data('no_suratmasuk'));
+  $('.modal-body #kepada').val($(this).data('kepada'));
   $('.modal-body #perihal').val($(this).data('perihal'));
-  $('.modal-body #arsip').val($(this).data('arsip'));
+  $('.modal-body #kode_proyek').val($(this).data('kode_proyek'));
+  $('.modal-body #nama_proyek').val($(this).data('nama_proyek'));
+  $('.modal-body #ordner').val($(this).data('ordner'));
 })
 
-$(document).on('click', '#btn-editsk', function (){
-  $('.modal-body #id-surat_keluar').val($(this).data('id'));
-  $('.modal-body #proyek').val($(this).data('proyek'));
-  $('.modal-body #kontak').val($(this).data('kontak'));
-  $('.modal-body #tgl_surat').val($(this).data('tgl_surat'));
-  $('.modal-body #no-surat').val($(this).data('no_surat'));
-  $('.modal-body #dibuat').val($(this).data('dibuat'));
-  $('.modal-body #hal').val($(this).data('hal'));
-  $('.modal-body #kerahasiaan').val($(this).data('kerahasiaan'));
-  $('.modal-body #urgensi').val($(this).data('urgensi'));
+$(document).on('click', '#btn-editsuratkeluar', function (){
+  $('.modal-body #id-suratkeluar').val($(this).data('id'));
+  $('.modal-body #tgl_suratkeluar').val($(this).data('tgl_suratkeluar'));
+  $('.modal-body #no_suratkeluar').val($(this).data('no_suratkeluar'));
+  $('.modal-body #kepada').val($(this).data('kepada'));
+  $('.modal-body #perihal').val($(this).data('perihal'));
+  $('.modal-body #kode_proyek').val($(this).data('kode_proyek'));
+  $('.modal-body #nama_proyek').val($(this).data('nama_proyek'));
   $('.modal-body #ordner').val($(this).data('ordner'));
 })
 
@@ -685,12 +684,42 @@ $(document).on('click', '#btn-editformulir', function (){
   $('.modal-body #upload').val($(this).data('upload'));
 })
 
-$(document).on('click', '#btn-editmemo', function (){
-  $('.modal-body #id-memo').val($(this).data('id'));
-  $('.modal-body #tgl_memo').val($(this).data('tgl_memo'));
-  $('.modal-body #no_surat').val($(this).data('no_surat'));
-  $('.modal-body #dibuat').val($(this).data('dibuat'));
-  $('.modal-body #perihal').val($(this).data('perihal'));
+$(document).on('click', '#btn-editmemomasuk', function (){
+  $('.modal-body #id-memomasuk').val($(this).data('id'));
+  $('.modal-body #tgl_memomasuk').val($(this).data('tgl_memomasuk'));
+  $('.modal-body #no_memo').val($(this).data('no_memo'));
   $('.modal-body #dari').val($(this).data('dari'));
+  $('.modal-body #kepada').val($(this).data('kepada'));
+  $('.modal-body #perihal').val($(this).data('perihal'));
+  $('.modal-body #order').val($(this).data('order'));
   
+})
+
+$(document).on('click', '#btn-editmemokeluar', function (){
+  $('.modal-body #id-memokeluar').val($(this).data('id'));
+  $('.modal-body #tgl_memokeluar').val($(this).data('tgl_memokeluar'));
+  $('.modal-body #no_memokeluar').val($(this).data('no_memokeluar'));
+  $('.modal-body #dari').val($(this).data('dari'));
+  $('.modal-body #kepada').val($(this).data('kepada'));
+  $('.modal-body #perihal').val($(this).data('perihal'));
+  $('.modal-body #order').val($(this).data('order'));
+  
+})
+
+$(document).on('click', '#btn-editsuratkep', function (){
+  $('.modal-body #id-suratkep').val($(this).data('id'));
+  $('.modal-body #no_sk').val($(this).data('no_sk'));
+  $('.modal-body #tgl_sk').val($(this).data('tgl_sk'));
+  $('.modal-body #kepada').val($(this).data('kepada'));
+  $('.modal-body #ordner').val($(this).data('ordner'));
+  $('.modal-body #upload_sk').val($(this).data('upload_sk'));
+})
+
+$(document).on('click', '#btn-editperizinan', function (){
+  $('.modal-body #id-perizinan').val($(this).data('id'));
+  $('.modal-body #nama').val($(this).data('nama'));
+  $('.modal-body #tgl_perizinan').val($(this).data('tgl_perizinan'));
+  $('.modal-body #no_perizinan').val($(this).data('no_perizinan'));
+  $('.modal-body #perihal').val($(this).data('perihal'));
+  $('.modal-body #masaberlaku').val($(this).data('masaberlaku'));
 })

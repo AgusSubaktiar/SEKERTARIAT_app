@@ -18,12 +18,7 @@ class HomeAdmin extends BaseController
 
         $data = [
             'tot_suratm' => $this->modal->tot_suratm(),
-            'tot_suratk' => $this->modal->tot_suratk(),
-            'tot_user' => $this->modal->tot_user(),
-            'tot_emailms' => $this->modal->tot_emailms(),
-            'tot_emailk' => $this->modal->tot_emailk(),
-            'tot_formulir' => $this->modal->tot_formulir(),
-            'tot_memo' => $this->modal->tot_memo()
+
         ];
 
         return view('admin/homeAdmin', $data);

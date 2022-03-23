@@ -3,15 +3,14 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\SuratK_Model;
-use TCPDF;
+use App\Models\SuratKeluar_Model;
 
 class SuratKeluar extends BaseController
 {
 
     public function __construct()
     {
-        $this->model = new SuratK_Model();
+        $this->model = new SuratKeluar_Model();
         $this->pager = \Config\Services::pager();
     }
 
@@ -27,23 +26,21 @@ class SuratKeluar extends BaseController
 
         $data = [
             'judul' => 'Data Surat Keluar',
-            'surat_keluar' => $this->model->paginate('5'),
+            'suratkeluar' => $this->model->paginate('10'),
             'pager' => $this->model->pager
         ];
-        echo view('admin/suratk_view', $data);
+        echo view('admin/suratkeluar', $data);
     }
-    public function addSuratsk()
+    public function addsuratkeluar()
     {
-        if (isset($_POST['addSuratsk'])) {
+        if (isset($_POST['addsuratkeluar'])) {
             $val = $this->validate([
-                'proyek' => 'required',
-                'kontak' => 'required',
-                'tgl_surat' => 'required',
-                'no_surat' => 'required',
-                'dibuat' => 'required',
-                'hal' => 'required',
-                'kerahasiaan' => 'required',
-                'urgensi' => 'required',
+                'tgl_suratkeluar' => 'required',
+                'no_suratkeluar' => 'required',
+                'kepada' => 'required',
+                'perihal' => 'required',
+                'kode_proyek' => 'required',
+                'nama_proyek' => 'required',
                 'ordner' => [
                     'rules' => 'uploaded[ordner]|mime_in[ordner,application/pdf]|max_size[ordner,10000]',
                     'errors' => [
@@ -51,7 +48,7 @@ class SuratKeluar extends BaseController
                         'max_size' => 'Ukuran file terlalu besar',
                         'mime_in' => 'File anda salah'
                     ]
-                ]
+                ],
             ]);
 
             if (!$val) {
@@ -59,57 +56,53 @@ class SuratKeluar extends BaseController
                 session()->setFlashdata('err', \Config\Services::validation()->listErrors());
 
                 $data = [
-                    'judul' => 'Data Surat Keluar',
-                    'surat_keluar' => $this->model->getAllData()
+                    'judul' => 'Data Surat Masuk',
+                    'suratkeluar' => $this->model->getAllData()
                 ];
 
-                $data['surat_keluar'] = $this->model->getdata('suratkeluar')->result();
+                $data['suratkeluar'] = $this->model->getdata('suratkeluar')->result();
 
-                echo view('admin/suratk_view', $data);
+                echo view('admin/suratkeluar', $data);
             } else {
                 // Ambil file
                 $fileSampul = $this->request->getFile('ordner');
                 // pindahkan file ke folder upload
-                $fileSampul->move('uploadsk');
+                $fileSampul->move('uploadsuratkeluar');
                 // ambil nama file 
                 $namaSampul = $fileSampul->getName();
 
                 $data  = [
-                    'proyek' => $this->request->getPost('proyek'),
-                    'kontak' => $this->request->getPost('kontak'),
-                    'tgl_surat' => $this->request->getPost('tgl_surat'),
-                    'no_surat' => $this->request->getPost('no_surat'),
-                    'dibuat' => $this->request->getPost('dibuat'),
-                    'hal' => $this->request->getPost('hal'),
-                    'kerahasiaan' => $this->request->getPost('kerahasiaan'),
-                    'urgensi' => $this->request->getPost('urgensi'),
-                    'ordner' => $namaSampul
+                    'tgl_suratkeluar' => $this->request->getPost('tgl_suratkeluar'),
+                    'no_suratkeluar' => $this->request->getPost('no_suratkeluar'),
+                    'kepada' => $this->request->getPost('kepada'),
+                    'perihal' => $this->request->getPost('perihal'),
+                    'kode_proyek' => $this->request->getPost('kode_proyek'),
+                    'nama_proyek' => $this->request->getPost('nama_proyek'),
+                    'ordner' => $namaSampul,
                 ];
 
-                $success = $this->model->addSuratsk($data);
+                $success = $this->model->addsuratkeluar($data);
                 if ($success) {
                     session()->setFlashdata('message', ' Ditambahkan');
-                    return redirect()->to(base_url('Suratkeluar'));
+                    return redirect()->to(base_url('suratkeluar'));
                 }
             }
         } else {
-            return redirect()->to('Suratkeluar');
+            return redirect()->to('suratkeluar');
             dd('berhasil');
         }
     }
 
-    public function ubahsk()
+    public function ubahsuratkeluar()
     {
-        if (isset($_POST['ubahsk'])) {
+        if (isset($_POST['ubahsuratkeluar'])) {
             $val = $this->validate([
-                'proyek' => 'required',
-                'kontak' => 'required',
-                'tgl_surat' => 'required',
-                'no_surat' => 'required',
-                'dibuat' => 'required',
-                'hal' => 'required',
-                'kerahasiaan' => 'required',
-                'urgensi' => 'required',
+                'tgl_suratkeluar' => 'required',
+                'no_suratkeluar' => 'required',
+                'kepada' => 'required',
+                'perihal' => 'required',
+                'kode_proyek' => 'required',
+                'nama_proyek' => 'required',
                 'ordner' => 'required'
             ]);
 
@@ -118,76 +111,42 @@ class SuratKeluar extends BaseController
                 session()->setFlashdata('err', \Config\Services::validation()->listErrors());
 
                 $data = [
-                    'judul' => 'Data Surat keluar',
-                    'surat_keluar' => $this->model->getAllData()
+                    'judul' => 'Data Memo',
+                    'suratkeluar' => $this->model->getAllData()
                 ];
 
-                echo view('admin/suratk_view', $data);
+                echo view('admin/suratkeluar', $data);
             } else {
                 $id = $this->request->getPost('id');
 
                 $data  = [
-                    'proyek' => $this->request->getPost('proyek'),
-                    'kontak' => $this->request->getPost('kontak'),
-                    'tgl_surat' => $this->request->getPost('tgl_surat'),
-                    'no_surat' => $this->request->getPost('no_surat'),
-                    'dibuat' => $this->request->getPost('dibuat'),
-                    'hal' => $this->request->getPost('hal'),
-                    'kerahasiaan' => $this->request->getPost('kerahasiaan'),
-                    'urgensi' => $this->request->getPost('urgensi'),
-                    'ordner' => $this->request->getPost('ordner')
+                    'tgl_suratkeluar' => $this->request->getPost('tgl_suratkeluar'),
+                    'no_suratkeluar' => $this->request->getPost('no_suratkeluar'),
+                    'kepada' => $this->request->getPost('kepada'),
+                    'perihal' => $this->request->getPost('perihal'),
+                    'kode_proyek' => $this->request->getPost('kode_proyek'),
+                    'nama_proyek' => $this->request->getPost('nama_proyek'),
                 ];
 
                 // update data
-                $success = $this->model->ubahsk($data, $id);
+                $success = $this->model->ubahsuratkeluar($data, $id);
                 if ($success) {
                     session()->setFlashdata('message', ' Diubah');
-                    return redirect()->to(base_url('SuratKeluar'));
+                    return redirect()->to(base_url('suratkeluar'));
                 }
             }
         } else {
-            return redirect()->to('SuratKeluar');
+            return redirect()->to('suratkeluar');
         }
     }
 
 
-    public function hapussk($id)
+    public function hapussuratkeluar($id)
     {
-        $success = $this->model->hapussk($id);
+        $success = $this->model->hapussuratkeluar($id);
         if ($success) {
             session()->setFlashdata('message', ' Dihapus');
-            return redirect()->to(base_url('SuratKeluar'));
+            return redirect()->to(base_url('suratkeluar'));
         }
-    }
-
-    public function cetak()
-    {
-        $id = $this->request->uri->getSegment(1);
-
-        $this->model = new SuratK_Model();
-        $surat = $this->model->find($id);
-
-        $html = view('admin/cetak', [
-            'surat' => $surat,
-        ]);
-
-        $pdf = new TCPDF('L', PDF_UNIT, 'A5', true, 'UTF-8', false);
-
-        $pdf->SetCreator(PDF_CREATOR);
-        $pdf->SetAuthor('Dea Venditama');
-        $pdf->SetTitle('Invoice');
-        $pdf->SetSubject('Invoice');
-
-        $pdf->setPrintHeader(false);
-        $pdf->setPrintFooter(false);
-
-        $pdf->addPage();
-
-        // output the HTML content
-        $pdf->writeHTML($html, true, false, true, false, '');
-        //line ini penting
-        $this->response->setContentType('application/pdf');
-        //Close and output PDF document
-        $pdf->Output('invoice.pdf', 'I');
     }
 }
