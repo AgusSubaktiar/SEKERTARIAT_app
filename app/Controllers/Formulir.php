@@ -36,7 +36,7 @@ class Formulir extends BaseController
         if (isset($_POST['addformulir'])) {
             $val = $this->validate([
                 'ordner' => [
-                    'rules' => 'uploaded[ordner]|mime_in[ordner,application/pdf]|max_size[ordner,10000]',
+                    'rules' => 'uploaded[ordner]|mime_in[ordner,application/pdf,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document]|max_size[ordner,10000]',
                     'errors' => [
                         'uploaded' => 'Pilih file terlebih dahulu',
                         'max_size' => 'Ukuran file terlalu besar',

@@ -14,10 +14,7 @@ class Home extends BaseController
     public function index()
     {
 
-        $data = [
-            'tot_suratm' => $this->modal->tot_suratm(),
-            'tot_suratk' => $this->modal->tot_suratk()
-        ];
+        $data = [];
 
         return view('admin/home', $data);
     }
