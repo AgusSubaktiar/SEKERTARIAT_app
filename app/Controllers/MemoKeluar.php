@@ -53,6 +53,7 @@ class MemoKeluar extends BaseController
             if (!$val) {
 
                 session()->setFlashdata('err', \Config\Services::validation()->listErrors());
+                return redirect()->to('MemoKeluar')->withInput()->with('validation', $val);
 
                 $data = [
                     'judul' => 'Data Memo Keluar',
@@ -106,6 +107,7 @@ class MemoKeluar extends BaseController
             if (!$val) {
 
                 session()->setFlashdata('err', \Config\Services::validation()->listErrors());
+                return redirect()->to('MemoKeluar')->withInput()->with('validation', $val);
 
                 $data = [
                     'judul' => 'Data Memo',

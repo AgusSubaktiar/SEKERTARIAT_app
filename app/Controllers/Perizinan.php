@@ -45,6 +45,7 @@ class Perizinan extends BaseController
             if (!$val) {
 
                 session()->setFlashdata('err', \Config\Services::validation()->listErrors());
+                return redirect()->to('Perizinan')->withInput()->with('validation', $val);
 
                 $data = [
                     'judul' => 'Data Memo',
@@ -91,6 +92,7 @@ class Perizinan extends BaseController
             if (!$val) {
 
                 session()->setFlashdata('err', \Config\Services::validation()->listErrors());
+                return redirect()->to('Perizinan')->withInput()->with('validation', $val);
 
                 $data = [
                     'judul' => 'Data Memo',

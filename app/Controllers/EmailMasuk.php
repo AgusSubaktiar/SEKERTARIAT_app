@@ -55,6 +55,7 @@ class EmailMasuk extends BaseController
             if (!$val) {
 
                 session()->setFlashdata('err', \Config\Services::validation()->listErrors());
+                return redirect()->to('EmailKeluar')->withInput()->with('validation', $val);
 
                 $data = [
                     'judul' => 'Data Email Masuk',
@@ -112,6 +113,7 @@ class EmailMasuk extends BaseController
             if (!$val) {
 
                 session()->setFlashdata('err', \Config\Services::validation()->listErrors());
+                return redirect()->to('EmailMasuk')->withInput()->with('validation', $val);
 
                 $data = [
                     'judul' => 'Data Email Masuk',

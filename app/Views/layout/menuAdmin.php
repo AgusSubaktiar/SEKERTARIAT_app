@@ -34,7 +34,7 @@
 
 <li class="menu-header">Dokument Tender</li>
 <li>
-    <a href=""><i class="fab fa-artstation" style="color:black;"></i> <span>Dokument Tender</span></a>
+    <a href="<?= base_url('Tender'); ?>"><i class="fab fa-artstation" style="color:black;"></i> <span>Dokument Tender</span></a>
 </li>
 
 <li class="menu-header">Surat Keputusan</li>
@@ -55,4 +55,9 @@
 <li class="menu-header">Tambah User</li>
 <li>
     <a href="<?= base_url('User'); ?>"><i class="fas fa-user-alt" style="color:black;"></i> <span>Tambah User</span></a>
+</li>
+
+<li class="menu-header">Disposisi</li>
+<li>
+    <a href="<?= base_url('Disposisi'); ?>"><i class="fas fa-clipboard-check" style="color:black;"></i> <span>Disposisi</span></a>
 </li>

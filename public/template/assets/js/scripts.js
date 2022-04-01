@@ -691,6 +691,14 @@ $(document).on('click', '#btn-editformulir', function (){
   
 })
 
+$(document).on('click', '#btn-edittender', function (){
+  $('.modal-body #id-tender').val($(this).data('id_tender'));
+  $('.modal-body #nama_proyek').val($(this).data('nama_proyek'));
+  $('.modal-body #tgl_tender').val($(this).data('tgl_tender'));
+  $('.modal-body #filetender').val($(this).data('filetender'));
+  
+})
+
 $(document).on('click', '#btn-editsuratkep', function (){
   $('.modal-body #id-suratkep').val($(this).data('id'));
   $('.modal-body #no_sk').val($(this).data('no_sk'));

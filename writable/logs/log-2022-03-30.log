@@ -1,0 +1,87 @@
+CRITICAL - 2022-03-30 23:10:25 --> Undefined variable: row
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\dokumentender.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 145, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/dokumente...', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\DokumenTender.php(32): view('admin/dokumente...', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\DokumenTender->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DokumenTender))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-30 23:28:58 --> There is no data to insert.
+#0 D:\xampp\htdocs\codeigniter4\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 D:\xampp\htdocs\codeigniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 D:\xampp\htdocs\codeigniter4\app\Models\DokumenTender_Model.php(31): CodeIgniter\Model->insert(Array)
+#3 D:\xampp\htdocs\codeigniter4\app\Controllers\DokumenTender.php(77): App\Models\DokumenTender_Model->adddokumen_tender(Array)
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\DokumenTender->adddokumen_tender()
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DokumenTender))
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-30 23:31:48 --> Call to undefined method App\Models\DokumenTender_Model::adddokumen_tender
+#0 D:\xampp\htdocs\codeigniter4\app\Controllers\DokumenTender.php(77): CodeIgniter\Model->__call('adddokumen_tend...', Array)
+#1 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\DokumenTender->adddokumentender()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DokumenTender))
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-30 23:32:12 --> Call to undefined method App\Models\DokumenTender_Model::adddokumen_tender
+#0 D:\xampp\htdocs\codeigniter4\app\Controllers\DokumenTender.php(77): CodeIgniter\Model->__call('adddokumen_tend...', Array)
+#1 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\DokumenTender->adddokumentender()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DokumenTender))
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-30 23:32:40 --> There is no data to insert.
+#0 D:\xampp\htdocs\codeigniter4\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 D:\xampp\htdocs\codeigniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 D:\xampp\htdocs\codeigniter4\app\Models\DokumenTender_Model.php(31): CodeIgniter\Model->insert(Array)
+#3 D:\xampp\htdocs\codeigniter4\app\Controllers\DokumenTender.php(77): App\Models\DokumenTender_Model->adddokumentender(Array)
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\DokumenTender->adddokumentender()
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DokumenTender))
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-30 23:34:06 --> There is no data to insert.
+#0 D:\xampp\htdocs\codeigniter4\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 D:\xampp\htdocs\codeigniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 D:\xampp\htdocs\codeigniter4\app\Models\DokumenTender_Model.php(31): CodeIgniter\Model->insert(Array)
+#3 D:\xampp\htdocs\codeigniter4\app\Controllers\DokumenTender.php(77): App\Models\DokumenTender_Model->adddokumentender(Array)
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\DokumenTender->adddokumentender()
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DokumenTender))
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-30 23:38:16 --> Undefined variable: dokumen_tender
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\dokumentender.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 73, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/dokumente...', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\DokumenTender.php(32): view('admin/dokumente...', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\DokumenTender->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DokumenTender))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-03-30 23:39:21 --> Duplicate entry '0' for key 'PRIMARY'
+ERROR - 2022-03-30 23:41:11 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-03-30 23:44:18 --> Undefined variable: row
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\dokumentender.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 145, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/dokumente...', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\DokumenTender.php(32): view('admin/dokumente...', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\DokumenTender->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DokumenTender))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}

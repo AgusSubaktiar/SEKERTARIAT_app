@@ -1,0 +1,8 @@
+CRITICAL - 2022-03-24 20:40:38 --> Call to undefined method App\Models\SuratKeluar_Model::getdata
+#0 D:\xampp\htdocs\codeigniter4\app\Controllers\SuratKeluar.php(63): CodeIgniter\Model->__call('getdata', Array)
+#1 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\SuratKeluar->addsuratkeluar()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratKeluar))
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}

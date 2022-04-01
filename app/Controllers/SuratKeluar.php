@@ -54,6 +54,7 @@ class SuratKeluar extends BaseController
             if (!$val) {
 
                 session()->setFlashdata('err', \Config\Services::validation()->listErrors());
+                return redirect()->to('SuratKeluar')->withInput()->with('validation', $val);
 
                 $data = [
                     'judul' => 'Data Surat Masuk',
@@ -109,6 +110,7 @@ class SuratKeluar extends BaseController
             if (!$val) {
 
                 session()->setFlashdata('err', \Config\Services::validation()->listErrors());
+                return redirect()->to('SuratKeluar')->withInput()->with('validation', $val);
 
                 $data = [
                     'judul' => 'Data Memo',

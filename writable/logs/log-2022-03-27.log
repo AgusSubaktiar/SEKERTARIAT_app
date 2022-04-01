@@ -1,0 +1,9 @@
+CRITICAL - 2022-03-27 23:50:44 --> Class 'App\Controllers\Controller' not found
+#0 D:\xampp\htdocs\codeigniter4\system\Router\Router.php(518): include_once()
+#1 D:\xampp\htdocs\codeigniter4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Disposisi')
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Disposisi')
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#7 {main}

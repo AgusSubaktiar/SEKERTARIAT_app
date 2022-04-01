@@ -1,0 +1,70 @@
+CRITICAL - 2022-03-25 02:06:11 --> Invalid file: admin/pages/home.php
+#0 D:\xampp\htdocs\codeigniter4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/pages/hom...')
+#1 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/pages/hom...', Array, true)
+#2 D:\xampp\htdocs\codeigniter4\app\Controllers\SuratMasukUser.php(31): view('admin/pages/hom...', Array)
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\SuratMasukUser->index()
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasukUser))
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2022-03-25 02:10:26 --> Column 'data_bidang_id' cannot be null
+CRITICAL - 2022-03-25 02:39:14 --> Invalid file: admin/layouts/layout_admin.php
+#0 D:\xampp\htdocs\codeigniter4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/layouts/l...')
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(226): CodeIgniter\View\View->render('admin/layouts/l...', Array, true)
+#2 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/disposisi', Array, true)
+#3 D:\xampp\htdocs\codeigniter4\app\Controllers\Disposisi.php(35): view('admin/disposisi', Array)
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Disposisi->index()
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Disposisi))
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-25 03:15:52 --> File not found: uploads/Scrum_PKL_1.xlsx
+#0 D:\xampp\htdocs\codeigniter4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('uploads/Scrum_P...')
+#1 D:\xampp\htdocs\codeigniter4\system\HTTP\DownloadResponse.php(107): CodeIgniter\Files\File->__construct('uploads/Scrum_P...', true)
+#2 D:\xampp\htdocs\codeigniter4\system\HTTP\ResponseTrait.php(774): CodeIgniter\HTTP\DownloadResponse->setFilePath('uploads/Scrum_P...')
+#3 D:\xampp\htdocs\codeigniter4\app\Controllers\Home.php(71): CodeIgniter\HTTP\Response->download('Scrum_PKL_1.xls...', NULL)
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Home->download('Scrum_PKL_1.xls...')
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-25 21:25:00 --> Undefined variable: getNamaBidang
+#0 D:\xampp\htdocs\codeigniter4\app\Views\layout\defaultAdmin.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 37, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\View\View.php(226): CodeIgniter\View\View->render('layout/defaultA...', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/homeAdmin', Array, true)
+#5 D:\xampp\htdocs\codeigniter4\app\Controllers\HomeAdmin.php(32): view('admin/homeAdmin', Array)
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\HomeAdmin->index()
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+#8 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-25 21:52:16 --> Undefined index: nama_bidang
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\disposisi.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 28, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/disposisi', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\Disposisi.php(35): view('admin/disposisi', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Disposisi->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Disposisi))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-03-25 22:03:11 --> Undefined index: nama_isi_bidang
+#0 D:\xampp\htdocs\codeigniter4\app\Views\admin\disposisi.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 28, Array)
+#1 D:\xampp\htdocs\codeigniter4\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\codeigniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\codeigniter4\system\Common.php(1089): CodeIgniter\View\View->render('admin/disposisi', Array, true)
+#4 D:\xampp\htdocs\codeigniter4\app\Controllers\Disposisi.php(35): view('admin/disposisi', Array)
+#5 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\Disposisi->index()
+#6 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Disposisi))
+#7 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
