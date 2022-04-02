@@ -696,6 +696,14 @@ $(document).on('click', '#btn-edittender', function (){
   $('.modal-body #nama_proyek').val($(this).data('nama_proyek'));
   $('.modal-body #tgl_tender').val($(this).data('tgl_tender'));
   $('.modal-body #filetender').val($(this).data('filetender'));
+})
+
+$(document).on('click', '#btn-editpenawaran', function (){
+  $('.modal-body #id-penawaran').val($(this).data('id'));
+  $('.modal-body #kepada').val($(this).data('kepada'));
+  $('.modal-body #no_penawaran').val($(this).data('no_penawaran'));
+  $('.modal-body #tgl_penawaran').val($(this).data('tgl_penawaran'));
+  $('.modal-body #uraian').val($(this).data('uraian'));
   
 })
 

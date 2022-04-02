@@ -86,7 +86,13 @@
                                         <?php endforeach; ?>
                                     </tbody>
                                 </table>
-                                <?= $pager->links('default', 'pagination'); ?>
+                                <div class="card-footer text-right">
+                                    <nav class="d-inline-block">
+                                        <ul class="pagination mb-0">
+                                            <li class="page-item active"><?= $pager->links('default', 'pagination'); ?></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
 </section>
@@ -122,6 +128,56 @@
                 <button type="submit" name="addtender" class="btn btn-primary">Tambah Data</button>
             </div>
             </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Edit Surat-->
+<div class="modal fade" id="modelUbahTender">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit <?= $judul; ?></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="<?= base_url('Tender/ubahtender'); ?>" method="POST" enctype="multipart/form-data">
+                    <div class="form-group mb-1">
+                        <input type="text" name="id" id="id-tender">
+                        <label for="nama_proyek"></label>
+                        <input type="text" name="nama_proyek" id="nama_proyek" class="form-control" placeholder="Masukan Tanggal Surat Masuk" <?= $row['nama_proyek'] ?>>
+                    </div>
+                    <div class="form-group mb-1">
+                        <label for="tgl_tender"></label>
+                        <input type="date" name="tgl_tender" id="tgl_tender" class="form-control" placeholder="Masukan tgl_tender" value="<?= $row['tgl_tender'] ?>">
+                    </div>
+                    <div class=" form-group mb-1">
+                        <label for="filetender"></label>
+                        <input type="text" name="filetender" id="filetender" class="form-control" placeholder="Masukan filetender" value="<?= $row['filetender'] ?>">
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" name="ubahtender" class="btn btn-primary">Edit Data</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Hapus Data Surat Masuk-->
+<div class="modal fade" id="modelHapusTender">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                Apakah anda yakin ingin menghapus anda ini?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="Tender/hapustender/<?= $row['id_tender']; ?>" class="btn btn-primary">Yakin</a>
+            </div>
         </div>
     </div>
 </div>

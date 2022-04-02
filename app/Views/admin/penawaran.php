@@ -4,7 +4,7 @@
 
 <section class="section">
     <div class="section-header">
-        <h1>Tabel Data Surat Masuk</h1>
+        <h1>Tabel Berkas Penawaran</h1>
     </div>
 
     <?php if (session()->get('message')) : ?>
@@ -12,7 +12,7 @@
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            Data Surat Masuk<strong><?= session()->getFlashdata('message'); ?></strong>
+            Berkas Penawaran<strong><?= session()->getFlashdata('message'); ?></strong>
         </div>
 
         <script>
@@ -39,7 +39,7 @@
                         <div class="card-header">
                             <h4>
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modelTambahSuratMasuk">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modelTambahPenawaran">
                                     <i class="fa fas-plus">Tambah Data</i>
                                 </button>
                             </h4>
@@ -59,35 +59,29 @@
                                 <table class="table table-striped table-md">
                                     <tr>
                                         <th>No.</th>
-                                        <th>Tanggal Surat</th>
-                                        <th>No Surat</th>
                                         <th>Kepada</th>
-                                        <th>Perihal</th>
-                                        <th>Kode Proyek</th>
-                                        <th>Nama Proyek</th>
-                                        <th>ordner</th>
+                                        <th>No Penawaran</th>
+                                        <th>Tanggal Penawaran</th>
+                                        <th>Uraian</th>
                                         <th>Aksi</th>
 
                                     </tr>
                                     <tbody>
                                         <?php
                                         $page = isset($_GET['page']) ? $_GET['page'] : 1;
-                                        $no = 1 + (5 * ($page - 1));
+                                        $no = 1 + (10 * ($page - 1));
 
-                                        foreach ($suratmasuk as $row) : ?>
+                                        foreach ($penawaran as $row) : ?>
                                             <tr>
                                                 <td scope"row"><?= $no; ?></td>
-                                                <td><?= $row['tgl_suratmasuk']; ?></td>
-                                                <td><?= $row['no_suratmasuk']; ?></td>
                                                 <td><?= $row['kepada']; ?></td>
-                                                <td><?= $row['perihal']; ?></td>
-                                                <td><?= $row['kode_proyek']; ?></td>
-                                                <td><?= $row['nama_proyek']; ?></td>
-                                                <td><?= $row['ordner']; ?></td>
+                                                <td><?= $row['no_penawaran']; ?></td>
+                                                <td><?= $row['tgl_penawaran']; ?></td>
+                                                <td><?= $row['uraian']; ?></td>
                                                 <td>
-                                                    <button type="button" data-toggle="modal" data-target="#modelSuratMasuk" id="btn-editsuratmasuk" class="btn btn-sm btn-warning" data-id="<?= $row['id']; ?>" data-tgl_suratmasuk="<?= $row['tgl_suratmasuk']; ?>" data-no_suratmasuk="<?= $row['no_suratmasuk']; ?>" data-kepada="<?= $row['kepada']; ?>" data-perihal="<?= $row['perihal']; ?>" data-kode_proyek="<?= $row['kode_proyek']; ?>" data-nama_proyek="<?= $row['nama_proyek']; ?>" data-ordner="<?= $row['ordner']; ?>"> <i class="fas fa-edit"></i></button>
-                                                    <button type="button" data-toggle="modal" data-target="#modelHapusSuratMasuk" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i></button>
-
+                                                    <button type="button" data-toggle="modal" data-target="#modelUbahPenawaran" id="btn-editpenawaran" class="btn btn-sm btn-warning" data-id="<?= $row['id']; ?>" data-kepada="<?= $row['kepada']; ?>" data-no_penawaran="<?= $row['no_penawaran']; ?>" data-tgl_penawaran="<?= $row['tgl_penawaran']; ?>" data-uraian="<?= $row['uraian']; ?>"> <i class="fas fa-edit"></i></button>
+                                                    <button type="button" data-toggle="modal" data-target="#modelHapusPenawaran" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i></button>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDownloadPenawaran" class="btn btn-sm btn-success"> <i class="fas fa-download"></i></button>
                                                 </td>
                                             </tr>
                                             <?php $no++; ?>
@@ -106,7 +100,7 @@
 </section>
 
 <!-- Modal Tambah Surat-->
-<div class="modal fade" id="modelTambahSuratMasuk">
+<div class="modal fade" id="modelTambahPenawaran">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -116,40 +110,28 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="<?= base_url('SuratMasuk/addsuratmasuk'); ?>" method="POST" enctype="multipart/form-data">
-                    <div class="form-group mb-1">
-                        <label for="tgl_suratmasuk"></label>
-                        <input type="date" name="tgl_suratmasuk" id="tgl_suratmasuk" class="form-control" placeholder="Masukan No Surat Keputusan">
-                    </div>
-                    <div class="form-group mb-1">
-                        <label for="no_suratmasuk"></label>
-                        <input type="text" name="no_suratmasuk" id="no_suratmasuk" class="form-control" placeholder="Masukan Tanggal SK">
-                    </div>
+                <form action="<?= base_url('Penawaran/addpenawaran'); ?>" method="POST" enctype="multipart/form-data">
                     <div class="form-group mb-1">
                         <label for="kepada"></label>
                         <input type="text" name="kepada" id="kepada" class="form-control" placeholder="Masukan Kepada">
                     </div>
                     <div class="form-group mb-1">
-                        <label for="perihal"></label>
-                        <input type="text" name="perihal" id="perihal" class="form-control" placeholder="Masukan perihal">
+                        <label for="no_penawaran"></label>
+                        <input type="text" name="no_penawaran" id="no_penawaran" class="form-control" placeholder="Masukan No Penawaran">
                     </div>
                     <div class="form-group mb-1">
-                        <label for="kode_proyek"></label>
-                        <input type="text" name="kode_proyek" id="kode_proyek" class="form-control" placeholder="Masukan kode_proyek">
+                        <label for="tgl_penawaran"></label>
+                        <input type="date" name="tgl_penawaran" id="tgl_penawaran" class="form-control" placeholder="Masukan Tanggal Penawaran">
                     </div>
-                    <div class="form-group mb-1">
-                        <label for="nama_proyek"></label>
-                        <input type="text" name="nama_proyek" id="nama_proyek" class="form-control" placeholder="Masukan nama_proyek">
-                    </div>
-                    <div class="custom-file mb-3">
-                        <label class="custom-file-label" for="ordner">Pilih file</label>
-                        <input type="file" name="ordner" id="ordner">
+                    <div class="custom-file mb-1">
+                        <label class="custom-file-label" for="uraian">Pilih file</label>
+                        <input type="file" name="uraian" id="uraian">
                     </div>
 
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" name="addsuratmasuk" class="btn btn-primary">Tambah Data</button>
+                <button type="submit" name="addpenawaran" class="btn btn-primary">Tambah Data</button>
             </div>
             </form>
         </div>
@@ -157,7 +139,7 @@
 </div>
 
 <!-- Modal Edit Surat-->
-<div class="modal fade" id="modelSuratMasuk">
+<div class="modal fade" id="modelUbahPenawaran">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -167,47 +149,36 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="<?= base_url('SuratMasuk/ubahsuratmasuk'); ?>" method="POST" enctype="multipart/form-data">
+                <form action="<?= base_url('Penawaran/ubahpenawaran'); ?>" method="POST" enctype="multipart/form-data">
                     <div class="form-group mb-1">
-                        <input type="hidden" name="id" id="id-suratmasuk">
-                        <label for="tgl_suratmasuk"></label>
-                        <input type="date" name="tgl_suratmasuk" id="tgl_suratmasuk" class="form-control" placeholder="Masukan Tanggal Surat Masuk" <?= $row['tgl_suratmasuk'] ?>>
-                    </div>
-                    <div class="form-group mb-1">
-                        <label for="no_suratmasuk"></label>
-                        <input type="text" name="no_suratmasuk" id="no_suratmasuk" class="form-control" placeholder="Masukan No surat masuk" value="<?= $row['no_suratmasuk'] ?>">
-                    </div>
-                    <div class="form-group mb-1">
+                        <input type="text" name="id" id="id-penawaran">
                         <label for="kepada"></label>
-                        <input type="text" name="kepada" id="kepada" class="form-control" placeholder="Masukan kepada" value="<?= $row['kepada'] ?>">
+                        <input type="text" name="kepada" id="kepada" class="form-control" placeholder="Masukan Tanggal Surat Masuk" <?= $row['kepada'] ?>>
                     </div>
                     <div class="form-group mb-1">
-                        <label for="perihal"></label>
-                        <input type="text" name="perihal" id="perihal" class="form-control" placeholder="Masukan perihal" value="<?= $row['perihal'] ?>">
+                        <label for="no_penawaran"></label>
+                        <input type="text" name="no_penawaran" id="no_penawaran" class="form-control" placeholder="Masukan No surat masuk" value="<?= $row['no_penawaran'] ?>">
                     </div>
                     <div class="form-group mb-1">
-                        <label for="kode_proyek"></label>
-                        <input type="text" name="kode_proyek" id="kode_proyek" class="form-control" placeholder="Masukan kode proyek" value="<?= $row['kode_proyek'] ?>">
-                    </div>
-                    <div class="form-group mb-1">
-                        <label for="nama_proyek"></label>
-                        <input type="text" name="nama_proyek" id="nama_proyek" class="form-control" placeholder="Masukan nama proyek" value="<?= $row['nama_proyek'] ?>">
+                        <label for="tgl_penawaran"></label>
+                        <input type="date" name="tgl_penawaran" id="tgl_penawaran" class="form-control" placeholder="Masukan tgl_penawaran" value="<?= $row['tgl_penawaran'] ?>">
                     </div>
                     <div class=" form-group mb-1">
-                        <label for="ordner"></label>
-                        <input type="text" name="ordner" id="ordner" class="form-control" placeholder="Masukan ordner" value="<?= $row['ordner'] ?>">
+                        <label for="uraian"></label>
+                        <input type="text" name="uraian" id="uraian" class="form-control" placeholder="Masukan uraian" value="<?= $row['uraian'] ?>">
                     </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" name="ubahsuratmasuk" class="btn btn-primary">Edit Data</button>
+                <button type="submit" name="ubahpenawaran" class="btn btn-primary">Edit Data</button>
             </div>
             </form>
         </div>
     </div>
 </div>
+
 <!-- Modal Hapus Data Surat Masuk-->
-<div class="modal fade" id="modelHapusSuratMasuk">
+<div class="modal fade" id="modelHapusFormulir">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -215,7 +186,22 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <a href="SuratMasuk/hapussuratmasuk/<?= $row['id']; ?>" class="btn btn-primary">Yakin</a>
+                <a href="Penawaran/hapuspenawaran/<?= $row['id']; ?>" class="btn btn-primary">Yakin</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal download Data-->
+<div class="modal fade" id="modelDownloadPenawaran">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                Apakah anda yakin ingin mendownload file ini?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <a href="Penawaran/download/<?= $row['uraian'] ?>" class="btn btn-primary">Yakin</a>
             </div>
         </div>
     </div>

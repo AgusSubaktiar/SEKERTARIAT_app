@@ -44,7 +44,7 @@
 
 <li class="menu-header">Berkas Penawaran</li>
 <li>
-    <a href=""><i class="fas fa-dice-d20" style="color:black;"></i> <span>Berkas Penawaran</span></a>
+    <a href="<?= base_url('Penawaran'); ?>"><i class="fas fa-dice-d20" style="color:black;"></i> <span>Berkas Penawaran</span></a>
 </li>
 
 <li class="menu-header">Perizinan</li>

@@ -84,7 +84,11 @@
                                         <?php endforeach; ?>
                                     </tbody>
                                 </table>
-                                <?= $pager->links('default', 'pagination'); ?>
+                                <div class="card-footer text-right">
+                                    <ul class="pagination mb-0">
+                                        <li class="page-item active"><?= $pager->links('default', 'pagination'); ?></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 </section>
