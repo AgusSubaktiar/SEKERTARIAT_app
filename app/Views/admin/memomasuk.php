@@ -165,7 +165,7 @@
                     <div class="form-group mb-1">
                         <input type="hidden" name="id" id="id-memomasuk">
                         <label for="tgl_memomasuk"></label>
-                        <input type="date" name="tgl_memomasuk" id="tgl_memomasuk" class="form-control" placeholder="Masukan Tanggal Memo" <?= $row['tgl_memomasuk'] ?>>
+                        <input type="date" name="tgl_memomasuk" id="tgl_memomasuk" class="form-control" placeholder="Masukan Tanggal Memo" value="<?= $row['tgl_memomasuk'] ?>">
                     </div>
                     <div class="form-group mb-1">
                         <label for="no_memo"></label>

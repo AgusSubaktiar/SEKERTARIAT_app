@@ -42,8 +42,13 @@ class DisposisiModel extends Model
         return $query->getResultArray();
     }
 
+    public function deleteTerdisposisiBySurat($idSurat)
+    {
+        return $this->db->table('terdisposisi')->delete(['id_surat' => $idSurat]);
+    }
+
     //insert data many 2 many terdisposisi
-    public function insert_data($bidang, $suratMasuk)
+    public function insertSuratTerdisposisi($bidang, $suratMasuk)
     {
         $data = [
             'id_disposisi' => $suratMasuk['id_disposisi'],

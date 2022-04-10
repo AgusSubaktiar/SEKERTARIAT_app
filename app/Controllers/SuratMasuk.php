@@ -94,7 +94,7 @@ class SuratMasuk extends BaseController
                 ];
 
                 // $success = $this->model->addsuratmasuk($data);
-                $success = $this->disposisi->insert_data($dataDisposisi, $dataSurat);
+                $success = $this->disposisi->insertSuratTerdisposisi($dataDisposisi, $dataSurat);
 
                 if ($success) {
                     session()->setFlashdata('message', ' Ditambahkan');
@@ -158,7 +158,7 @@ class SuratMasuk extends BaseController
 
     public function hapussuratmasuk($id)
     {
-        $success = $this->model->hapussuratmasuk($id);
+        $success = $this->disposisi->deleteTerdisposisiBySurat($id);
         if ($success) {
             session()->setFlashdata('message', ' Dihapus');
             return redirect()->to(base_url('SuratMasuk'));

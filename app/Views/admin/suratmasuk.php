@@ -96,20 +96,42 @@
                                                 <?php endforeach; ?>
                                                 <td>
                                                     <button type="button" data-toggle="modal" data-target="#modelSuratMasuk" id="btn-editsuratmasuk" class="btn btn-sm btn-warning" data-id="<?= $row['id']; ?>" data-tgl_suratmasuk="<?= $row['tgl_suratmasuk']; ?>" data-no_suratmasuk="<?= $row['no_suratmasuk']; ?>" data-kepada="<?= $row['kepada']; ?>" data-perihal="<?= $row['perihal']; ?>" data-kode_proyek="<?= $row['kode_proyek']; ?>" data-nama_proyek="<?= $row['nama_proyek']; ?>" data-ordner="<?= $row['ordner']; ?>"> <i class="fas fa-edit"></i></button>
-                                                    <button type="button" data-toggle="modal" data-target="#modelHapusSuratMasuk" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i></button>
+                                                    <button type="button" data-toggle="modal" data-target="#modelHapusSuratMasuk<?= $row['id']; ?>" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i></button>
 
                                                 </td>
                                             </tr>
+                                            <!-- Modal Hapus Data Surat Masuk-->
+                                            <form action="SuratMasuk/hapussuratmasuk/<?= $row['id']; ?>" method="post">
+                                                <div class="modal fade" id="modelHapusSuratMasuk<?= $row['id']; ?>" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                Apakah anda yakin ingin menghapus anda ini?
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                <a href="SuratMasuk/hapussuratmasuk/<?= $row['id']; ?>" class="btn btn-primary">Yakin</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                             <?php $no++; ?>
+
                                         <?php endforeach; ?>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- Modal Tambah Surat-->
-<div class="modal fade" id="modelTambahSuratMasuk">
+<div class="modal fade" id="modelTambahSuratMasuk" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -181,7 +203,5 @@
 </div>
 
 <!-- Modal Edit Surat-->
-
-<!-- Modal Hapus Data Surat Masuk-->
 
 <?= $this->endSection() ?>
