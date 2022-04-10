@@ -107,6 +107,15 @@ class SuratMasuk extends BaseController
         }
     }
 
+
+    public function editSuratMasuk($idSurat)
+    {
+        
+        if (isset($_POST)) {
+            # code...
+        }
+    }
+
     public function ubahsuratmasuk()
     {
         if (isset($_POST['ubahsuratmasuk'])) {

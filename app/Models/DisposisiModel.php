@@ -75,4 +75,32 @@ class DisposisiModel extends Model
         $this->db->transComplete();
         return redirect()->to(base_url('SuratMasuk'));
     }
+
+    public function editSuratTerdisposisi($id, $suratMasuk, $bidang)
+    {
+        $newSurat = [
+            'id_disposisi' => $suratMasuk['id_disposisi'],
+            'tgl_suratmasuk' => $suratMasuk['tgl_suratmasuk'],
+            'no_suratmasuk' => $suratMasuk['no_suratmasuk'],
+            'kepada' => $suratMasuk['kepada'],
+            'perihal' => $suratMasuk['perihal'],
+            'kode_proyek' => $suratMasuk['kode_proyek'],
+            'nama_proyek' => $suratMasuk['nama_proyek'],
+            'ordner' => $suratMasuk['ordner'],
+        ];
+        $builder = $this->db->table('suratmasuk');
+        $builder->where('id', $id);
+        $builder->update($newSurat);
+
+        $this->db->table('terdisposisi')->delete('id_surat', $id);
+
+        $result = array();
+        foreach ($bidang as $key => $value) {
+            $result = [
+                'id_surat' => $id,
+                'id_bidang' => $_POST['bidang'][$key]
+            ];
+        }
+        return $this->db->table('terdisposisi')->insertBatch($result);
+    }
 }
