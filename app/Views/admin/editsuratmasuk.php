@@ -82,7 +82,7 @@
                                 </div>
                                 <div class=" form-group mb-3">
                                     <label for="ordner">Ordner</label>
-                                    <input type="file" name="ordner" id="ordner" class="form-control" placeholder="Masukan ordner">
+                                    <input type="file" name="ordner" id="ordner" class="form-control" placeholder="Masukan ordner" value="<?= $suratmasuk[0]['ordner']; ?>">
                                     <p><?= $suratmasuk[0]['ordner']; ?></p>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Simpan perubahan</button>
