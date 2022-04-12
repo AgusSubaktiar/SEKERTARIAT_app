@@ -107,12 +107,40 @@ class SuratMasuk extends BaseController
         }
     }
 
-
-    public function editSuratMasuk($idSurat)
+    public function editSuratMasukView($id)
     {
-        
-        if (isset($_POST)) {
-            # code...
+        $data = [
+            'title' => 'Edit Surat Masuk',
+            'suratmasuk' => $this->disposisi->getSuratMasukById($id),
+            'disposisi' => $this->disposisi->getAllData(),
+            'bidang' => $this->bidang->getNamaBidang(),
+            'terdisposisi' => $this->disposisi->getTerdisposisiBySurat($id)
+        ];
+        return view('admin/editsuratmasuk', $data);
+    }
+
+
+    public function editSuratMasuk($id)
+    {
+        $data = [
+            'id_disposisi' => $this->request->getPost('status'),
+            'tgl_suratmasuk' => $this->request->getPost('tgl_suratmasuk'),
+            'no_suratmasuk' => $this->request->getPost('no_suratmasuk'),
+            'kepada' => $this->request->getPost('kepada'),
+            'perihal' => $this->request->getPost('perihal'),
+            'kode_proyek' => $this->request->getPost('kode_proyek'),
+            'nama_proyek' => $this->request->getPost('nama_proyek'),
+            'ordner' => $this->request->getPost('order'),
+        ];
+
+        $dataBidang = [
+            'id_bidang' => $this->request->getPost('bidang')
+        ];
+
+        $success = $this->disposisi->editSuratTerdisposisi($id, $data, $dataBidang);
+        if ($success) {
+            session()->setFlashdata('message', ' Diubah');
+            return redirect()->to(base_url('SuratMasuk'));
         }
     }
 

@@ -31,6 +31,26 @@ class DisposisiModel extends Model
         return $query->getResultArray();
     }
 
+    public function getSuratMasukById($id)
+    {
+        $builder = $this->db->table('suratmasuk as s');
+        $builder->select('s.*, GROUP_CONCAT(b.nama_bidang SEPARATOR ",") as bidang');
+        $builder->join('terdisposisi as t', 't.id_surat=s.id');
+        $builder->join('nama_bidang_tb as b', 'b.id_bidang=t.id_bidang');
+        $builder->where('s.id', $id);
+        $builder->groupBy('s.id');
+        $query = $builder->get();
+        return $query->getResultArray();
+    }
+
+    public function getTerdisposisiBySurat($id)
+    {
+        $builder = $this->db->table('terdisposisi');
+        $builder->where(['id_surat' => $id]);
+        $query = $builder->get();
+        return $query->getResultArray();
+    }
+
     public function getSuratMasukByBidang($idBidang)
     {
         $builder = $this->db->table('suratmasuk as s');
@@ -95,11 +115,12 @@ class DisposisiModel extends Model
         $this->db->table('terdisposisi')->delete('id_surat', $id);
 
         $result = array();
-        foreach ($bidang as $key => $value) {
-            $result = [
+        // dd($bidang);
+        foreach ($bidang['id_bidang'] as $key => $value) {
+            $result[] = array(
                 'id_surat' => $id,
                 'id_bidang' => $_POST['bidang'][$key]
-            ];
+            );
         }
         return $this->db->table('terdisposisi')->insertBatch($result);
     }

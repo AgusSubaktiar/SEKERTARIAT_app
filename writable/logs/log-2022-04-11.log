@@ -1,0 +1,218 @@
+ERROR - 2022-04-11 08:57:15 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-04-11 08:57:15 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(114): App\Models\DisposisiModel->getSuratMasukById('59')
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('59')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-11 09:38:19 --> Undefined index: tgl_suratmasuk
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Views\admin\editsuratmasuk.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 42, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\Common.php(1089): CodeIgniter\View\View->render('admin/editsurat...', Array, true)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(116): view('admin/editsurat...', Array)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#7 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-11 09:40:24 --> Array to string conversion
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Views\admin\editsuratmasuk.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\Common.php(1089): CodeIgniter\View\View->render('admin/editsurat...', Array, true)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(116): view('admin/editsurat...', Array)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#7 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-11 09:40:45 --> Undefined index: tgl_suratmasuk
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Views\admin\editsuratmasuk.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\Common.php(1089): CodeIgniter\View\View->render('admin/editsurat...', Array, true)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(116): view('admin/editsurat...', Array)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#7 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-11 09:40:53 --> Undefined index: id
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Views\admin\editsuratmasuk.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\Common.php(1089): CodeIgniter\View\View->render('admin/editsurat...', Array, true)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(116): view('admin/editsurat...', Array)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#7 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-11 09:41:02 --> Array to string conversion
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Views\admin\editsuratmasuk.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\Common.php(1089): CodeIgniter\View\View->render('admin/editsurat...', Array, true)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(116): view('admin/editsurat...', Array)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#7 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-11 09:43:16 --> Undefined index: tgl_suratmasuk
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 116, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-11 09:43:38 --> Trying to get property 'tgl_suratmasuk' of non-object
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 116, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-11 09:44:29 --> Undefined index: id
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 116, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-11 09:53:33 --> Undefined index: id_dispsosisi
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Views\admin\editsuratmasuk.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 60, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\Common.php(1089): CodeIgniter\View\View->render('admin/editsurat...', Array, true)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(117): view('admin/editsurat...', Array)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#7 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-11 09:58:41 --> Call to undefined method App\Models\Bidang_admin_model::getAllData
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(116): CodeIgniter\Model->__call('getAllData', Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-11 10:08:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-04-11 21:15:51 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-04-11 21:15:51 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, G...', Array, false)
+#2 D:\xampp\htdocs\SEKERTARIAT_app\app\Models\DisposisiModel.php(42): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(114): App\Models\DisposisiModel->getSuratMasukById('60')
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-11 21:16:04 --> A non-numeric value encountered
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Views\admin\editsuratmasuk.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'D:\\xampp\\htdocs...', 38, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\Common.php(1089): CodeIgniter\View\View->render('admin/editsurat...', Array, true)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(119): view('admin/editsurat...', Array)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('60')
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#7 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-11 21:18:37 --> Undefined offset: 0
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Views\admin\editsuratmasuk.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp\\htdocs...', 38, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\Common.php(1089): CodeIgniter\View\View->render('admin/editsurat...', Array, true)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(119): view('admin/editsurat...', Array)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('SuratMasuk', 'ubahsuratmasuk', '60')
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#7 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-11 21:19:32 --> Undefined offset: 0
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Views\admin\editsuratmasuk.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp\\htdocs...', 38, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\Common.php(1089): CodeIgniter\View\View->render('admin/editsurat...', Array, true)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(119): view('admin/editsurat...', Array)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('SuratMasuk', 'ubahsuratmasuk', '60')
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#7 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-11 21:20:07 --> Undefined offset: 0
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Views\admin\editsuratmasuk.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp\\htdocs...', 38, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\Common.php(1089): CodeIgniter\View\View->render('admin/editsurat...', Array, true)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(119): view('admin/editsurat...', Array)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasukView('SuratMasuk', 'ubahsuratmasuk', '60')
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#7 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-11 23:02:11 --> Call to undefined method App\Models\DisposisiModel::editSuratMasuk
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(140): CodeIgniter\Model->__call('editSuratMasuk', Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasuk('60')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-11 23:03:37 --> Undefined index: id_bidang
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Models\DisposisiModel.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 121, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(140): App\Models\DisposisiModel->editSuratTerdisposisi('60', Array, Array)
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasuk('60')
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-04-11 23:05:23 --> Undefined index: id_bidang
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Models\DisposisiModel.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 122, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(140): App\Models\DisposisiModel->editSuratTerdisposisi('60', Array, Array)
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasuk('60')
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-04-11 23:05:57 --> Undefined index: id_bidang
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Models\DisposisiModel.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 122, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(140): App\Models\DisposisiModel->editSuratTerdisposisi('60', Array, Array)
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->editSuratMasuk('60')
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#7 {main}
