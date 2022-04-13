@@ -112,7 +112,7 @@ class DisposisiModel extends Model
         $builder->where('id', $id);
         $builder->update($newSurat);
 
-        $this->db->table('terdisposisi')->delete('id_surat', $id);
+        $this->db->table('terdisposisi')->delete(['id_surat' => $id]);
 
         $result = array();
         // dd($bidang);
