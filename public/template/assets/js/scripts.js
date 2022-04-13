@@ -19,6 +19,10 @@ if(window.Chart) {
   Chart.defaults.global.tooltips.mode = 'nearest';
 }
 
+$(document).ready(function() {
+  $('#dataTables').DataTable();
+} );
+
 // DropzoneJS
 if(window.Dropzone) {
   Dropzone.autoDiscover = false;

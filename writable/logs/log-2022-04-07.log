@@ -1,0 +1,184 @@
+ERROR - 2022-04-07 02:00:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP_CONCAT(disposisi.dispoisisi SEPERATOR ", " as `disposisi`
+FROM `suratma...' at line 2
+CRITICAL - 2022-04-07 02:00:04 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(32): App\Models\DisposisiModel->getSuratMasukByDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-07 02:00:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP_CONCAT(disposisi.dispoisisi SEPERATOR ", " as `disposisi`
+FROM `suratma...' at line 2
+ERROR - 2022-04-07 02:01:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP_CONCAT(disposisi.dispoisisi SEPERATOR ", " as `disposisi`
+FROM `suratma...' at line 2
+ERROR - 2022-04-07 02:02:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP_CONCAT(disposisi.dispoisisi SEPERATOR ", " as `disposisi`
+FROM `suratma...' at line 2
+ERROR - 2022-04-07 02:03:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP_CONCAT(disposisi.dispoisisi SEPERATOR ", ") as disposisi
+FROM `suratmas...' at line 2
+ERROR - 2022-04-07 02:03:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP_CONCAT(disposisi.dispoisisi SEPERATOR ", ") as disposisi
+FROM `suratmas...' at line 2
+ERROR - 2022-04-07 02:11:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SEPERATOR ", ") as disposisi
+FROM `suratmasuk` as `s`
+JOIN `terdisposisi` as ...' at line 1
+ERROR - 2022-04-07 02:13:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SEPERATOR ", ") as disposisi
+FROM `suratmasuk` as `s`
+JOIN `terdisposisi` as ...' at line 1
+ERROR - 2022-04-07 02:13:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SEPERATOR ", ") as disposisi
+FROM `suratmasuk` as `s`
+JOIN `terdisposisi` as ...' at line 1
+CRITICAL - 2022-04-07 02:18:27 --> Undefined index: id
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Views\admin\suratmasuk.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 90, Array)
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\Common.php(1089): CodeIgniter\View\View->render('admin/suratmasu...', Array, true)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(38): view('admin/suratmasu...', Array)
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#7 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-07 07:27:19 --> Call to a member function links() on null
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\Common.php(1089): CodeIgniter\View\View->render('admin/suratmasu...', Array, true)
+#3 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(37): view('admin/suratmasu...', Array)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-04-07 09:11:34 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-04-07 09:11:34 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\xampp\htdocs\SEKERTARIAT_app\app\Models\Users_Model.php(47): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\Login.php(35): App\Models\Users_Model->cekLogin('admin', '21232f297a57a5a...')
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\login->auth()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-04-07 09:11:53 --> Error connecting to the database: MySQL server has gone away
+CRITICAL - 2022-04-07 09:11:53 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\xampp\htdocs\SEKERTARIAT_app\app\Models\Users_Model.php(47): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\Login.php(35): App\Models\Users_Model->cekLogin('admin', '21232f297a57a5a...')
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\login->auth()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-04-07 09:12:28 --> Error connecting to the database: MySQL server has gone away
+CRITICAL - 2022-04-07 09:12:28 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\xampp\htdocs\SEKERTARIAT_app\app\Models\Users_Model.php(47): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\Login.php(35): App\Models\Users_Model->cekLogin('admin', '21232f297a57a5a...')
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\login->auth()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-04-07 09:38:37 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-04-07 09:38:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\xampp\htdocs\SEKERTARIAT_app\app\Models\Users_Model.php(47): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\Login.php(35): App\Models\Users_Model->cekLogin('admin', '21232f297a57a5a...')
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\login->auth()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-04-07 09:39:21 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-04-07 09:39:21 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\xampp\htdocs\SEKERTARIAT_app\app\Models\Users_Model.php(47): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\Login.php(35): App\Models\Users_Model->cekLogin('admin', '21232f297a57a5a...')
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\login->auth()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-04-07 09:39:37 --> Table 'sekertariat.user_tb' doesn't exist in engine
+CRITICAL - 2022-04-07 09:39:37 --> Call to a member function getRowArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\Login.php(35): App\Models\Users_Model->cekLogin('admin', '21232f297a57a5a...')
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\login->auth()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-07 10:44:48 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-07 11:17:53 --> Class 'App\Models\KebidanganModel' not found
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(802): App\Controllers\SuratMasuk->__construct()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-07 11:20:06 --> Class 'App\Models\KebidanganModel' not found
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(802): App\Controllers\SuratMasuk->__construct()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-07 11:20:55 --> Class 'App\Models\KebidanganModel' not found
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(802): App\Controllers\SuratMasuk->__construct()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-07 11:24:53 --> Class 'App\Models\KebidanganModel' not found
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(802): App\Controllers\SuratMasuk->__construct()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-07 11:26:02 --> Class 'App\Models\KebidanganModel' not found
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(802): App\Controllers\SuratMasuk->__construct()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-07 11:26:37 --> Class 'App\Models\KebidanganModel' not found
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(802): App\Controllers\SuratMasuk->__construct()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-07 11:28:18 --> Class 'App\Models\KebidanganModel' not found
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(802): App\Controllers\SuratMasuk->__construct()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}

@@ -47,7 +47,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3308,
+        'port'     => 3306,
     ];
 
     /**
@@ -58,7 +58,7 @@ class Database extends Config
      */
     public $tests = [
         'DSN'      => '',
-        'hostname' => '127.0.0.1',
+        'hostname' => '127.0.0.1:6908',
         'username' => '',
         'password' => '',
         'database' => ':memory:',

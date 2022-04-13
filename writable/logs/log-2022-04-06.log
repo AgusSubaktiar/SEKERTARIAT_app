@@ -1,0 +1,146 @@
+CRITICAL - 2022-04-06 08:07:49 --> syntax error, unexpected '}'
+#0 D:\xampp\htdocs\SEKERTARIAT_app\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Disp...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Disp...')
+#3 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(16): spl_autoload_call('App\\Models\\Disp...')
+#4 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(802): App\Controllers\SuratMasuk->__construct()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-04-06 08:08:13 --> Unknown column 'disposisi.id' in 'on clause'
+ERROR - 2022-04-06 08:08:30 --> Not unique table/alias: 'suratmasuk'
+ERROR - 2022-04-06 08:08:34 --> Not unique table/alias: 'suratmasuk'
+ERROR - 2022-04-06 08:10:09 --> Not unique table/alias: 'suratmasuk'
+ERROR - 2022-04-06 08:50:42 --> Unknown column 'disposisi.id' in 'on clause'
+CRITICAL - 2022-04-06 08:50:42 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(32): App\Models\DisposisiModel->getSuratMasukByDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-06 09:23:29 --> Unknown column 'disposisi.id' in 'on clause'
+CRITICAL - 2022-04-06 09:23:29 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(32): App\Models\DisposisiModel->getSuratMasukByDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-06 09:24:56 --> Unknown column 'disposisi.id' in 'on clause'
+CRITICAL - 2022-04-06 09:24:56 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(32): App\Models\DisposisiModel->getSuratMasukByDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-06 10:11:05 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-04-06 10:11:05 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(32): App\Models\DisposisiModel->getSuratMasukByDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-06 10:11:20 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-04-06 10:11:20 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(32): App\Models\DisposisiModel->getSuratMasukByDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-06 10:11:27 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-04-06 10:11:27 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(32): App\Models\DisposisiModel->getSuratMasukByDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-06 10:11:30 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-04-06 10:11:30 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(32): App\Models\DisposisiModel->getSuratMasukByDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-06 10:12:03 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-04-06 10:12:03 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(32): App\Models\DisposisiModel->getSuratMasukByDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-06 10:12:10 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-04-06 10:12:10 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(32): App\Models\DisposisiModel->getSuratMasukByDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-06 10:13:34 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-04-06 10:13:34 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(32): App\Models\DisposisiModel->getSuratMasukByDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-06 21:02:16 --> Unknown column 'disposisi.id' in 'on clause'
+ERROR - 2022-04-06 21:02:40 --> Unknown column 'disposisi.id' in 'on clause'
+ERROR - 2022-04-06 21:03:08 --> Unknown column 'disposisi.id' in 'on clause'
+ERROR - 2022-04-06 21:03:40 --> Unknown column 'disposisi.id' in 'on clause'
+ERROR - 2022-04-06 21:04:21 --> Unknown column 'disposisi.id' in 'on clause'
+ERROR - 2022-04-06 21:04:22 --> Unknown column 'disposisi.id' in 'on clause'
+ERROR - 2022-04-06 21:04:54 --> Unknown column 'disposisi.id' in 'on clause'
+ERROR - 2022-04-06 21:04:56 --> Unknown column 'disposisi.id' in 'on clause'
+ERROR - 2022-04-06 21:05:48 --> Unknown column 'disposisi.id' in 'on clause'
+ERROR - 2022-04-06 21:06:38 --> Not unique table/alias: 'suratmasuk'
+ERROR - 2022-04-06 21:06:40 --> Not unique table/alias: 'suratmasuk'
+ERROR - 2022-04-06 21:45:55 --> Column 'id' in group statement is ambiguous
+CRITICAL - 2022-04-06 21:45:56 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(32): App\Models\DisposisiModel->getSuratMasukByDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-06 22:23:27 --> Unknown column 'suratmasuk.kode_peroyek' in 'field list'
+ERROR - 2022-04-06 22:24:17 --> Unknown column 'suratmasuk.kode_peroyek' in 'field list'
+ERROR - 2022-04-06 22:24:20 --> Unknown column 'suratmasuk.kode_peroyek' in 'field list'
+ERROR - 2022-04-06 23:27:13 --> Unknown column 'suratmasuk.id' in 'on clause'
+CRITICAL - 2022-04-06 23:27:13 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(35): App\Models\DisposisiModel->getDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-06 23:28:05 --> Unknown column 'suratmasuk.id' in 'on clause'
+CRITICAL - 2022-04-06 23:28:05 --> Call to a member function getResultArray() on bool
+#0 D:\xampp\htdocs\SEKERTARIAT_app\app\Controllers\SuratMasuk.php(35): App\Models\DisposisiModel->getDisposisi()
+#1 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(825): App\Controllers\SuratMasuk->index()
+#2 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuratMasuk))
+#3 D:\xampp\htdocs\SEKERTARIAT_app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SEKERTARIAT_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\SEKERTARIAT_app\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}

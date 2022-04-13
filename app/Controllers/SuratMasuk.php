@@ -2,8 +2,11 @@
 
 namespace App\Controllers;
 
+use App\Models\DisposisiModel;
 use CodeIgniter\Controller;
 use App\Models\SuratMasuk_Model;
+use App\Models\Bidang_admin_model;
+
 
 class SuratMasuk extends BaseController
 {
@@ -12,6 +15,8 @@ class SuratMasuk extends BaseController
     {
         $this->model = new SuratMasuk_Model();
         $this->pager = \Config\Services::pager();
+        $this->disposisi = new DisposisiModel();
+        $this->bidang = new Bidang_admin_model();
     }
 
     public function index()
@@ -26,8 +31,11 @@ class SuratMasuk extends BaseController
 
         $data = [
             'judul' => 'Data Surat Masuk',
-            'suratmasuk' => $this->model->paginate('5'),
-            'pager' => $this->model->pager
+            'terdisposisi' => $this->disposisi->getAllSuratMasuk(),
+            'pager' => $this->model->pager,
+            'disposisi' => $this->disposisi->getAllData(),
+            'bidang' => $this->bidang->getNamaBidang()
+            // 'masukdispos' => $this->disposisi->getDisposisi()
         ];
         echo view('admin/suratmasuk', $data);
     }
@@ -71,7 +79,8 @@ class SuratMasuk extends BaseController
                 // ambil nama file 
                 $namaSampul = $fileSampul->getName();
 
-                $data  = [
+                $dataSurat  = [
+                    'id_disposisi' => $this->request->getPost('disposisi'),
                     'tgl_suratmasuk' => $this->request->getPost('tgl_suratmasuk'),
                     'no_suratmasuk' => $this->request->getPost('no_suratmasuk'),
                     'kepada' => $this->request->getPost('kepada'),
@@ -80,8 +89,13 @@ class SuratMasuk extends BaseController
                     'nama_proyek' => $this->request->getPost('nama_proyek'),
                     'ordner' => $namaSampul,
                 ];
+                $dataDisposisi = [
+                    'id_bidang' => $this->request->getPost('bidang')
+                ];
 
-                $success = $this->model->addsuratmasuk($data);
+                // $success = $this->model->addsuratmasuk($data);
+                $success = $this->disposisi->insertSuratTerdisposisi($dataDisposisi, $dataSurat);
+
                 if ($success) {
                     session()->setFlashdata('message', ' Ditambahkan');
                     return redirect()->to(base_url('SuratMasuk'));
@@ -90,6 +104,43 @@ class SuratMasuk extends BaseController
         } else {
             return redirect()->to('SuratMasuk');
             dd('berhasil');
+        }
+    }
+
+    public function editSuratMasukView($id)
+    {
+        $data = [
+            'title' => 'Edit Surat Masuk',
+            'suratmasuk' => $this->disposisi->getSuratMasukById($id),
+            'disposisi' => $this->disposisi->getAllData(),
+            'bidang' => $this->bidang->getNamaBidang(),
+            'terdisposisi' => $this->disposisi->getTerdisposisiBySurat($id)
+        ];
+        return view('admin/editsuratmasuk', $data);
+    }
+
+
+    public function editSuratMasuk($id)
+    {
+        $data = [
+            'id_disposisi' => $this->request->getPost('status'),
+            'tgl_suratmasuk' => $this->request->getPost('tgl_suratmasuk'),
+            'no_suratmasuk' => $this->request->getPost('no_suratmasuk'),
+            'kepada' => $this->request->getPost('kepada'),
+            'perihal' => $this->request->getPost('perihal'),
+            'kode_proyek' => $this->request->getPost('kode_proyek'),
+            'nama_proyek' => $this->request->getPost('nama_proyek'),
+            'ordner' => $this->request->getPost('order'),
+        ];
+
+        $dataBidang = [
+            'id_bidang' => $this->request->getPost('bidang')
+        ];
+
+        $success = $this->disposisi->editSuratTerdisposisi($id, $data, $dataBidang);
+        if ($success) {
+            session()->setFlashdata('message', ' Diubah');
+            return redirect()->to(base_url('SuratMasuk'));
         }
     }
 
@@ -144,7 +195,7 @@ class SuratMasuk extends BaseController
 
     public function hapussuratmasuk($id)
     {
-        $success = $this->model->hapussuratmasuk($id);
+        $success = $this->disposisi->deleteTerdisposisiBySurat($id);
         if ($success) {
             session()->setFlashdata('message', ' Dihapus');
             return redirect()->to(base_url('SuratMasuk'));

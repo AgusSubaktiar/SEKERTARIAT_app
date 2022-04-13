@@ -6,6 +6,7 @@ use App\Models\FileModel;
 use App\Models\Bidang_admin_model;
 use App\Models\Users_Model;
 use App\Models\DataBidang_Model;
+use App\Models\DisposisiModel;
 
 class Home extends BaseController
 {
@@ -19,15 +20,18 @@ class Home extends BaseController
         $model = new Bidang_admin_model;
         $modelUser = new Users_Model;
         $modelDataBidang = new DataBidang_Model;
+        $suratMasuk = new DisposisiModel();
+        $session = session()->get();
 
         $data = [
             'judul' => 'Home',
             'validation' => \Config\Services::validation(),
-            'dataFile' => $this->fileModel->findAll()
+            'getNamaBidang' => $model->getNamaBidang(),
+            'getUser0' => $modelUser->getUserModel(),
+            'getBidangData' => $modelDataBidang->getDataBidang(),
+            'suratByBidang' => $suratMasuk->getSuratMasukByBidang($session['id_bidang']),
+            'disposisi' => $suratMasuk->getAllData()
         ];
-        $data['getNamaBidang'] = $model->getNamaBidang();
-        $data['getUser0'] = $modelUser->getUserModel();
-        $data['getBidangData'] = $modelDataBidang->getDataBidang();
         return view('admin/home', $data);
     }
 
