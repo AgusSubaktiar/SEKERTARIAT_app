@@ -71,7 +71,7 @@
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
             <div class="card card-statistic-1">
-                <div class="card-icon bg-info">
+                <div class="card-icon bg-success">
                     <i class="fas fa-address-card"></i>
                 </div>
                 <div class="card-wrap">
@@ -86,7 +86,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
             <div class="card card-statistic-1">
-                <div class="card-icon bg-success">
+                <div class="card-icon bg-warning">
                     <i class="far fa-address-card"></i>
                 </div>
                 <div class="card-wrap">
@@ -101,7 +101,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
             <div class="card card-statistic-1">
-                <div class="card-icon bg-primary">
+                <div class="card-icon bg-danger">
                     <i class="far fa-folder"></i>
                 </div>
                 <div class="card-wrap">
@@ -116,8 +116,8 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
             <div class="card card-statistic-1">
-                <div class="card-icon bg-dark">
-                    <i class="fas fa-user-alt"></i>
+                <div class="card-icon bg-primary">
+                    <i class="fas fa-cart-plus"></i>
                 </div>
                 <div class="card-wrap">
                     <div class="card-header">
@@ -133,8 +133,8 @@
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
             <div class="card card-statistic-1">
-                <div class="card-icon bg-danger">
-                    <i class="fas fa-address-card"></i>
+                <div class="card-icon bg-primary">
+                    <i class="fab fa-accusoft"></i>
                 </div>
                 <div class="card-wrap">
                     <div class="card-header">
@@ -148,8 +148,38 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
             <div class="card card-statistic-1">
+                <div class="card-icon bg-danger">
+                    <i class="fas fa-folder-open"></i>
+                </div>
+                <div class="card-wrap">
+                    <div class="card-header">
+                        <h4>Total Berkas Penawaran</h4>
+                    </div>
+                    <div class="card-body">
+                        <?= $tot_berkas ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="card card-statistic-1">
                 <div class="card-icon bg-warning">
-                    <i class="far fa-address-card"></i>
+                    <i class="fas fa-folder-plus"></i>
+                </div>
+                <div class="card-wrap">
+                    <div class="card-header">
+                        <h4>Total Berkas Tender</h4>
+                    </div>
+                    <div class="card-body">
+                        <?= $tot_tender ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="card card-statistic-1">
+                <div class="card-icon bg-success">
+                    <i class="fas fa-user"></i>
                 </div>
                 <div class="card-wrap">
                     <div class="card-header">
@@ -161,7 +191,6 @@
                 </div>
             </div>
         </div>
-
 
 
 </section>

@@ -27,6 +27,8 @@ class HomeAdmin extends BaseController
             'tot_perizinan' => $this->modal->tot_perizinan(),
             'tot_formulir' => $this->modal->tot_formulir(),
             'tot_user' => $this->modal->tot_user(),
+            'tot_berkas' => $this->modal->tot_berkas(),
+            'tot_tender' => $this->modal->tot_tender(),
         ];
 
         return view('admin/homeAdmin', $data);

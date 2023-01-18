@@ -123,7 +123,7 @@
                     </div>
                     <div class="form-group mb-1">
                         <label for="no_suratmasuk"></label>
-                        <input type="text" name="no_suratmasuk" id="no_suratmasuk" class="form-control" placeholder="Masukan Tanggal SK">
+                        <input type="text" name="no_suratmasuk" id="no_suratmasuk" class="form-control" placeholder="Masukan No Surat">
                     </div>
                     <div class="form-group mb-1">
                         <label for="kepada"></label>

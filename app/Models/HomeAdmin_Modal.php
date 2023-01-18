@@ -51,4 +51,12 @@ class HomeAdmin_Modal extends Model
     {
         return $this->db->table('perizinan')->countAll();
     }
+    public function tot_berkas()
+    {
+        return $this->db->table('penawaran')->countAll();
+    }
+    public function tot_tender()
+    {
+        return $this->db->table('tender')->countAll();
+    }
 }

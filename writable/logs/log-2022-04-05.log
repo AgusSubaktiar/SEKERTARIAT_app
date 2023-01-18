@@ -1,0 +1,10 @@
+ERROR - 2022-04-05 20:15:30 --> Table 'sekertariat.berkaspenawaran' doesn't exist
+CRITICAL - 2022-04-05 20:15:30 --> Call to a member function getResult() on bool
+#0 D:\xampp\htdocs\codeigniter4\app\Models\HomeAdmin_Modal.php(56): CodeIgniter\Database\BaseBuilder->countAll()
+#1 D:\xampp\htdocs\codeigniter4\app\Controllers\HomeAdmin.php(30): App\Models\HomeAdmin_Modal->tot_berkas()
+#2 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(825): App\Controllers\HomeAdmin->index()
+#3 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+#4 D:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\codeigniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#7 {main}

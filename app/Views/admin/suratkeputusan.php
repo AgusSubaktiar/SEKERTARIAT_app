@@ -14,7 +14,6 @@
             </button>
             Data Surat Keputusan<strong><?= session()->getFlashdata('message'); ?></strong>
         </div>
-
         <script>
             $(".alert").alert();
         </script>
@@ -131,7 +130,7 @@
                     </div>
                     <div class="form-group mb-1">
                         <label for="upload_sk"></label>
-                        <input type="text" name="upload_sk" id="upload_sk" class="form-control" placeholder="Masukan upload_sk">
+                        <input type="text" name="upload_sk" id="upload_sk" class="form-control" placeholder="Masukan ordner">
                     </div>
 
             </div>
